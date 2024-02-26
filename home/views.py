@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Plan
 
 
 # Create your views here.
@@ -12,5 +13,6 @@ def about(request):
 
 
 def plans(request):
-    return render(request, 'plans.html')
-
+    p = Plan.objects.all()
+    content = {"plans": p}
+    return render(request, 'plans.html', content)
