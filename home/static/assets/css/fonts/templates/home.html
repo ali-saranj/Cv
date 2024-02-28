@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}صفحه اصلی{% endblock title %}
+{% block title %}Home - Code Plus{% endblock title %}
 {% block content %}
     <section class="cs_hero cs_style_5 position-relative text-center cs_center cs_ripple_activate cs_bg_filed"
              data-src="{% static 'assets/img/tech-startup/hero-bg.jpg' %}">
         <div class="container">
             <div class="cs_hero_text position-relative">
-                <h1 class="cs_hero_title cs_fs_68 cs_white_color">همراهی قوی در جهت رسیدن به قله‌های موفقیت در دنیای
+                <h3 class="cs_hero_title cs_fs_50 cs_white_color bs-font-iranYekanBpld">همراهی قوی در جهت رسیدن به قله‌های موفقیت در دنیای
                     توسعه
-                    نرم‌افزار</h1>
-                <p class="cs_hero_subtitle">از پتانسیل بی حد و حصر هوش مصنوعی برای فراتر رفتن از قلمرو تخیل و خلق کردن
+                    نرم‌افزار</h3>
+                <p class="cs_hero_subtitle cs_fs_21 pt-5 lh-lg">از پتانسیل بی حد و حصر هوش مصنوعی برای فراتر رفتن از قلمرو تخیل و خلق کردن
                     استفاده کنید<br>شاهکارهای مسحور کننده زمان و مکان، دل ها و ذهن ها را مجذوب زیبایی می کند.</p>
-                <div class="cs_hero_btns">
+                <div class="cs_hero_btns pt-5">
                     <a href="{% url 'plans' %}" class="cs_btn cs_style_1 cs_btn_accent">مشاهده همه پروژه ها<span><i
                             class="fa-solid fa-arrow-right"></i></span></a><a
                         href="https://www.youtube.com/embed/VcaAVWtP48A"
@@ -57,16 +57,17 @@
     <section>
         <div class="container">
             <div class="cs_section_heading cs_style_1 cs_type_1 text-center">
-                <p class="cs_section_subtitle cs_accent_color cs_fs_18 mb-0">خدمات</p>
+                <p class="cs_accent_color cs_fs_29 mb-lg-5 fw-bolder ">خدمات</p>
                 <div class="cs_height_10 cs_height_lg_5"></div>
-                <h2 class="cs_section_title cs_fs_50 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                <h2 class="cs_section_title cs_fs_38 mb-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     تیم
                     “کد پلاس” یک تیم حرفه‌ای و متخصص در زمینه توسعه نرم‌افزار اندروید و وبسایت است</h2>
             </div>
             <div class="cs_height_85 cs_height_lg_45"></div>
-            <div class="row g-3">
+{# خدمات#}
+            <div class="row g-4">
                 <div class="col-lg-6">
-                    <div class="cs_iconbox cs_style_4 cs_radius_5">
+                    <div class="cs_iconbox cs_style_7 cs_radius_10 ">
                         <div class="cs_iconbox_icon"><img
                                 src="{% static 'assets/img/tech-startup/icons8-android.svg' %}"
                                 alt="Icon"></div>
@@ -78,6 +79,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="cs_iconbox cs_style_4 cs_radius_5">
                         <div class="cs_iconbox_icon"><img src="{% static 'assets/img/tech-startup/icons8-site.png' %}"
