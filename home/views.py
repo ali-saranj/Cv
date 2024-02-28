@@ -16,3 +16,5 @@ def plans(request):
     p = Plan.objects.all()
     content = {"plans": p}
     return render(request, 'plans.html', content)
+
+
