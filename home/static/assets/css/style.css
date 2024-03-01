@@ -9606,7 +9606,63 @@ body,h1,h2,h3,h4,h5,a,p{font-family: iranyekan!important;}
 }
 
 .slick-slider,.owl-carousel{direction:ltr!important;}
-body,h1,h2,h3,h4,h5,a,p{font-family: iranyekan!important;}
+/* Fonts */
+body,h1,h2,h3,h4,h5{font-family: samimBold!important;}
+a,p{font-family: samimReg!important;}
+
+@font-face {
+  font-family: 'samimBold';
+  src: url('fonts/Samim.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Samim-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Samim-Bold.woff') format('woff'),
+       url('fonts/Samim-Bold.woff2') format('woff2'),/* Pretty Modern Browsers */
+       url('fonts/Samim-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'samimReg';
+  src: url('fonts/Samim.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Samim.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Samim.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Samim.woff2')  format('woff2'),
+       url('fonts/Samim.ttf') format('truetype');/* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'iranyekan';
+  src: url('fonts/iranyekanweblightfanum.eot'); /* IE9 Compat Modes */
+  src: url('fonts/iranyekanweblightfanum.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/iranyekanweblightfanum.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/iranyekanweblightfanum.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/iranyekanweblightfanum.svg#iranyekan') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'iranyekan';
+  src: url('fonts/iranyekanwebboldfanum.eot'); /* IE9 Compat Modes */
+  src: url('fonts/iranyekanwebboldfanum.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/iranyekanwebboldfanum.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/iranyekanwebboldfanum.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/iranyekanwebboldfanum.svg#iranyekan') format('svg'); /* Legacy iOS */
+   font-weight:bold;
+}
+
+.slick-slider,.owl-carousel{direction:ltr!important;}
+body,h1,h2,h3,h4,h5{font-family: samimBold!important;}
+a,p{font-family: samimReg!important;}
+@font-face {
+  font-family: 'samimBold';
+  src: url('fonts/Samim.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Samim-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Samim-Bold.woff') format('woff'),
+       url('fonts/Samim-Bold.woff2') format('woff2'),/* Pretty Modern Browsers */
+       url('fonts/Samim-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'samimReg';
+  src: url('fonts/Samim.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Samim.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Samim.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Samim.woff2')  format('woff2'),
+       url('fonts/Samim.ttf') format('truetype');/* Safari, Android, iOS */
+}
 @font-face {
   font-family: 'iranyekan';
   src: url('fonts/iranyekanweblightfanum.eot'); /* IE9 Compat Modes */
