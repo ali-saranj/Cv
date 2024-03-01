@@ -36,13 +36,12 @@
 body,
 html {
   color: #4f4747;
-  font-family: "Inter", sans-serif;
+  font-family: "iransans";
   font-size: 16px;
   font-weight: 400;
   line-height: 1.625em;
   overflow-x: hidden !important;
 }
-
 
 h1,
 h2,
@@ -6336,8 +6335,11 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px;
-  gap: 40px;
+  padding: 30px;
+  gap: 20px;
+  height: 300px;
+  text-align: justify;
+  align-items: center;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: relative;
@@ -6345,8 +6347,9 @@ hr {
 }
 @media (max-width: 1199px) {
   .cs_iconbox.cs_style_4 {
-    padding: 25px;
-    gap: 25px;
+    padding: 20px;
+    gap: 15px;
+
   }
 }
 @media (max-width: 400px) {
@@ -6370,12 +6373,13 @@ hr {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   opacity: 0;
+  overflow: hidden;
 }
 .cs_iconbox.cs_style_4 .cs_iconbox_icon {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  width: 82px;
+  width: 100px;
 }
 @media (max-width: 1199px) {
   .cs_iconbox.cs_style_4 .cs_iconbox_icon {
@@ -9586,7 +9590,20 @@ html .ui-button.ui-state-disabled:active {
   fill: #171717;
 }/*# sourceMappingURL=style.css.map */
 .slick-slider,.owl-carousel{direction:ltr!important;}
-body,h1,h2,h3,h4,h5,a,p{font-family: iranyekan!important;}
+
+/* Fonts */
+body,h1,h2,h3,h4,h5,a,p{font-family: samim!important;}
+@font-face {
+    font-family: "iransans" ;
+    src: url("fonts/iransans.ttf") format("truetype")
+}
+@font-face {
+  font-family: 'samim';
+  src: url('fonts/Samim.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Samim-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Samim-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Samim-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
 @font-face {
   font-family: 'iranyekan';
   src: url('fonts/iranyekanweblightfanum.eot'); /* IE9 Compat Modes */
@@ -9606,7 +9623,14 @@ body,h1,h2,h3,h4,h5,a,p{font-family: iranyekan!important;}
 }
 
 .slick-slider,.owl-carousel{direction:ltr!important;}
-body,h1,h2,h3,h4,h5,a,p{font-family: iranyekan!important;}
+body,h1,h2,h3,h4,h5,a,p{font-family: samim!important;}
+@font-face {
+  font-family: 'samim';
+  src: url('fonts/Samim.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Samim-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Samim-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Samim-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
 @font-face {
   font-family: 'iranyekan';
   src: url('fonts/iranyekanweblightfanum.eot'); /* IE9 Compat Modes */
@@ -9624,3 +9648,7 @@ body,h1,h2,h3,h4,h5,a,p{font-family: iranyekan!important;}
        url('fonts/iranyekanwebboldfanum.svg#iranyekan') format('svg'); /* Legacy iOS */
    font-weight:bold;
 }
+
+
+
+
