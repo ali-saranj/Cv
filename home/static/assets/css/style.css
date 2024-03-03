@@ -2758,7 +2758,6 @@ hr {
     margin: 0;
     border-radius: 7px;
     height: 400px;
-
   }
 }
 .cs_about.cs_style_1 .cs_about_thumb::before {
@@ -2824,7 +2823,7 @@ hr {
 .cs_about.cs_style_2 .cs_about_thumb_in {
   height: 100%;
   width: 100%;
-  border-radius: inherit;
+  border-radius: 10px;
 }
 .cs_about.cs_style_2 .cs_mini_video {
   position: absolute;
@@ -2859,7 +2858,8 @@ hr {
   padding: 26px 30px 30px 30px;
   bottom: 0;
   left: 0;
-  border-radius: 0 5px 0 0;
+  border-radius: 0 10px 0 10px;
+
 }
 .cs_about.cs_style_2 .cs_sales_card h3 {
   margin-bottom: 9px;
@@ -7943,22 +7943,30 @@ hr {
 @media (max-width: 575px) {
   .cs_team.cs_style_1 {
     text-align: center;
+
   }
 }
+.cs_team.cs_style_1 img{
+  border-radius: 10px;
+}
 .cs_team.cs_style_1 .cs_team_info {
-  padding: 28px 30px 0;
+  padding: 30px;
+  text-align: center;
 }
 @media (max-width: 991px) {
   .cs_team.cs_style_1 .cs_team_info {
-    padding: 15px 0px 0;
+    padding: 15px;
+    text-align: center;
   }
 }
 .cs_team.cs_style_1 .cs_team_info h2 {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+  text-align: center;
 }
 @media (max-width: 991px) {
   .cs_team.cs_style_1 .cs_team_info h2 {
     margin-bottom: 2px;
+    text-align: center;
   }
 }
 
