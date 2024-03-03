@@ -24,6 +24,5 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('about', views.about, name="about"),
     path('plans', views.plans, name="plans"),
-    path('contact', views.ProjectCreateView.as_view(), name="contact"),
     ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
