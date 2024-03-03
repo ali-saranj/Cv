@@ -2753,11 +2753,12 @@ hr {
   border-radius: 0 5px 5px 0;
 }
 @media (max-width: 991px) {
-  .cs_about.cs_style_1 .cs_about_thumb {
-    width: 100%;
-    margin-left: 0;
-    border-radius: 5px;
+  .cs_about.cs_style_1 .cs_about_thumb{
+    width: auto;
+    margin: 0;
+    border-radius: 7px;
     height: 400px;
+
   }
 }
 .cs_about.cs_style_1 .cs_about_thumb::before {

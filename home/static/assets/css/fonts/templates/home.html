@@ -10,13 +10,13 @@
              data-src="{% static 'assets/img/tech-startup/hero-bg.jpg' %}">
         <div class="container">
             <div class="cs_hero_text position-relative">
-                <h1 class="cs_hero_title cs_fs_68 cs_white_color">همراهی قوی در جهت رسیدن به قله‌های موفقیت در دنیای
-                    توسعه
-                    نرم‌افزار</h1>
+                <h1 class="cs_hero_title cs_fs_38 cs_white_color pb-5">
+                    همراهی قوی در جهت رسیدن به قله‌های موفقیت در دنیای توسعه نرم‌افزار
+                </h1>
                 <p class="cs_hero_subtitle">از پتانسیل بی حد و حصر هوش مصنوعی برای فراتر رفتن از قلمرو تخیل و خلق کردن
-                    استفاده کنید<br>شاهکارهای مسحور کننده زمان و مکان، دل ها و ذهن ها را مجذوب زیبایی می کند.</p>
-                <div class="cs_hero_btns">
-                    <a href="{% url 'plans' %}" class="cs_btn cs_style_1 cs_btn_accent">مشاهده همه پروژه ها<span><i
+                    استفاده کنید<br> شاهکارهای مسحور کننده زمان و مکان، دل ها و ذهن ها را مجذوب زیبایی می کند.</p>
+                <div class="cs_hero_btns pt-3">
+                    <a href="{% url 'plans' %}" class="cs_btn cs_style_1 cs_btn_accent ">مشاهده همه پروژه ها<span><i
                             class="fa-solid fa-arrow-right"></i></span></a><a
                         href="https://www.youtube.com/embed/VcaAVWtP48A"
                         class="cs_play_btn cs_style_1 cs_video_open"><img
@@ -61,33 +61,34 @@
     <section>
         <div class="container">
             <div class="cs_section_heading cs_style_1 cs_type_1 text-center">
-                <p class="cs_section_subtitle cs_accent_color cs_fs_18 mb-0">خدمات</p>
+                <p class="cs_accent_color cs_fs_38 mb-5 mt-0">خدمات</p>
                 <div class="cs_height_10 cs_height_lg_5"></div>
-                <h2 class="cs_section_title cs_fs_50 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                <h2 class="cs_section_title cs_fs_29 mb-5 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     تیم
                     “کد پلاس” یک تیم حرفه‌ای و متخصص در زمینه توسعه نرم‌افزار اندروید و وبسایت است</h2>
             </div>
             <div class="cs_height_85 cs_height_lg_45"></div>
-            <div class="row g-3">
+{# کادر خدمات #}
+            <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="cs_iconbox cs_style_4 cs_radius_5">
-                        <div class="cs_iconbox_icon"><img
-                                src="{% static 'assets/img/tech-startup/icons8-android.svg' %}"
-                                alt="Icon"></div>
-                        <div class="cs_iconbox_right">
-                            <h2 class="cs_iconbox_title cs_fs_29">طراحی و توسعه اپلیکیشن</h2>
+                        <div class="cs_iconbox_icon">
+                            <img src="{% static 'assets/img/tech-startup/icons8-android.svg' %}" alt="Icon">
+                        </div>
+                        <div class="cs_iconbox_right ">
+                            <h2 class="cs_iconbox_title cs_fs_21">طراحی و توسعه اپلیکیشن</h2>
                             <p class="cs_iconbox_subtitle">بهینه‌سازی عملکرد: عملکرد بهینه و سریع اپلیکیشن برای کاربران
                                 بسیار حائز اهمیت است. برنامه باید به طور مداوم بهینه‌سازی شود تا زمان بارگذاری صفحات و
                                 عملکرد کلی به حداقل برسد و تجربه کاربری را بهبود بخشد.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 overflow-hidden">
                     <div class="cs_iconbox cs_style_4 cs_radius_5">
-                        <div class="cs_iconbox_icon"><img src="{% static 'assets/img/tech-startup/icons8-site.png' %}"
-                                                          alt="Icon"></div>
+                        <div class="cs_iconbox_icon">
+                            <img src="{% static 'assets/img/tech-startup/icons8-site.png' %}" alt="Icon"></div>
                         <div class="cs_iconbox_right">
-                            <h2 class="cs_iconbox_title cs_fs_29">طراحی و توسعه وبسایت</h2>
+                            <h2 class="cs_iconbox_title cs_fs_21">طراحی و توسعه وبسایت</h2>
                             <p class="cs_iconbox_subtitle">طراحی و توسعه سایت نیازمند توجه به رابط کاربری جذاب،
                                 برنامه‌نویسی
                                 کد بهینه و امن، و تست منظم برای اطمینان از کیفیت و عملکرد صحیح است. این فرایند نیازمند
@@ -95,12 +96,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 overflow-hidden">
                     <div class="cs_iconbox cs_style_4 cs_radius_5">
                         <div class="cs_iconbox_icon"><img src="{% static 'assets/img/tech-startup/icons8-ui.png' %} "
                                                           alt="Icon"></div>
                         <div class="cs_iconbox_right">
-                            <h2 class="cs_iconbox_title cs_fs_29">طراحی واسط کاربری</h2>
+                            <h2 class="cs_iconbox_title cs_fs_21">طراحی واسط کاربری</h2>
                             <p class="cs_iconbox_subtitle">طراحی ظاهر اپلیکیشن و وب‌سایت اساسی‌ترین عامل در جلب توجه و
                                 راحتی
                                 کاربران است. از طریق استفاده از رابط کاربری جذاب، طراحی شیک و ساده، و استفاده از عناصر
@@ -110,12 +111,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 overflow-hidden">
                     <div class="cs_iconbox cs_style_4 cs_radius_5">
                         <div class="cs_iconbox_icon"><img src="{% static 'assets/img/tech-startup/icons8-idea.png' %}"
                                                           alt="Icon"></div>
                         <div class="cs_iconbox_right">
-                            <h2 class="cs_iconbox_title cs_fs_29">ایده‌پردازی</h2>
+                            <h2 class="cs_iconbox_title cs_fs_21">ایده‌پردازی</h2>
                             <p class="cs_iconbox_subtitle">
                                 ایده‌پردازی فرآیندی خلاقانه است که افراد از ذهن خود برای ایجاد راهکارها، محصولات، خدمات
                                 یا
@@ -132,25 +133,25 @@
     </section>
     <section class="cs_primary_bg">
         <div class="cs_height_143 cs_height_lg_75"></div>
+{# about us #}
         <div class="container">
-            <div class="cs_section_heading cs_style_1 cs_type_2">
-                <div class="cs_section_heading_left">
-                    <p class="cs_section_subtitle cs_accent_color cs_fs_18 mb-0">درباره ما</p>
+            <div class="cs_section_heading cs_style_1 cs_type_1 text-center">
+                <div class="cs_section_heading">
+                    <p class="cs_accent_color cs_fs_38 mb-5 mt-0">درباره ما</p>
                     <div class="cs_height_10 cs_height_lg_5"></div>
-                    <h2 class="cs_section_title cs_fs_50 mb-0 cs_white_color wow fadeInRight" data-wow-duration="0.8s"
+                    <h2 class="cs_section_heading cs_fs_38 cs_white_color wow fadeInRight" data-wow-duration="0.8s"
                         data-wow-delay="0.2s">تیم حرفه‌ای کد پلاس، با تجربه و انگیزه‌ای پویا، در زمینه توسعه نرم‌افزار
                         اندروید، همراه شماست تا بهترین نتیجه را به دست آورید</h2>
                 </div>
-                <div class="cs_section_heading_right"><a href="{% url 'about' %}" class="cs_btn cs_style_1 cs_btn_white">بیشتر
-                    بدانید<span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+
             </div>
             <div class="cs_height_85 cs_height_lg_45"></div>
             <div class="row g-3">
                 <div class="col-lg-12">
                     <div class="cs_goal cs_radius_5 cs_bg_filed"
                          data-src="{% static 'assets/img/tech-startup/goal.jpg' %} ">
-                        <div class="cs_goal_text">
-                            <p class="cs_goal_subtitle cs_white_color">هدف ما</p>
+                        <div class="cs_goal_text mb-4">
+                            <p class="cs_goal_subtitle cs_white_color cs_semibold cs_fs_18">هدف ما</p>
                             <h2 class="cs_goal_title mb-0 cs_fs_29 cs_semibold cs_white_color">صنعت را با راه حل های
                                 پیشرفته
                                 متحول کنید.</h2>
@@ -174,29 +175,33 @@
                     </div>
                 </div>
             </div>
+            {# More info Button#}
+                <div class="cs_section_heading_right mt-5"><a href="{% url 'about' %}" class="cs_btn cs_style_1 cs_btn_white">
+                    بیشتر بدانید<span><i class="fa-solid fa-arrow-right"></i></span></a></div>
         </div>
         <div class="cs_height_150 cs_height_lg_80"></div>
     </section>
+{# Why Us #}
     <section>
         <div class="cs_height_143 cs_height_lg_75"></div>
         <div class="container">
             <div class="cs_section_heading cs_style_1 cs_type_1 text-center">
-                <p class="cs_section_subtitle cs_accent_color cs_fs_18 mb-0">چرا ما</p>
+                <p class="cs_accent_color cs_fs_38 mb-5 mt-0">چرا ما</p>
                 <div class="cs_height_10 cs_height_lg_5"></div>
-                <h2 class="cs_section_title cs_fs_50 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                <h2 class="cs_section_heading cs_fs_38 cs_white_color wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     هدف
-                    ما بهبود مبتنی بر فناوری است<br>راه حل در کسب و کار</h2>
+                    ما بهبود مبتنی بر فناوری است<br><br>راه حل در کسب و کار</h2>
             </div>
             <div class="cs_height_85 cs_height_lg_45"></div>
             <div class="row g-3">
                 <div class="col-lg-6 col-xl-3">
-                    <div class="cs_iconbox cs_style_5 cs_primary_bg text-center cs_radius_5">
-                        <div class="cs_iconbox_icon cs_center"><img
-                                src="{% static 'assets/img/tech-startup/service_icon_1.svg' %}" alt="Icon"></div>
+                    <div class="cs_iconbox cs_style_5 cs_primary_bg text-center cs_radius_6">
+                        <div class="cs_iconbox_icon cs_center">
+                            <img src="{% static 'assets/img/tech-startup/service_icon_1.svg' %}" alt="Icon"></div>
                         <h2 class="cs_iconbox_title cs_white_color cs_fs_21"><a href="tech-startup.html">ربات چت</a>
                         </h2>
                         <p class="cs_iconbox_subtitle cs_gray_color_2">..................</p>
-                        <a href="service-details.html" class="cs_iconbox_btn">
+                        <a href="service-details.html" class="cs_iconbox_btn ">
                             <svg width="46" height="24" viewbox="0 0 46 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M45.0607 13.0616C45.6464 12.4759 45.6464 11.5261 45.0607 10.9403L35.5147 1.39437C34.9289 0.808588 33.9792 0.808588 33.3934 1.39437C32.8076 1.98016 32.8076 2.92991 33.3934 3.5157L41.8787 12.001L33.3934 20.4863C32.8076 21.072 32.8076 22.0218 33.3934 22.6076C33.9792 23.1934 34.9289 23.1934 35.5147 22.6076L45.0607 13.0616ZM0 13.501H44V10.501H0V13.501Z"
@@ -255,10 +260,11 @@
             </div>
         </div>
     </section>
+
     <section>
         <div class="cs_height_130 cs_height_lg_70"></div>
         <div class="container">
-            <h2 class="text-center cs_fs_68 cs_outline_text">فناوری الگوریتم نوآوری جدید ما به تحقق ایده های شما اختصاص
+            <h2 class="text-center cs_section_heading cs_fs_38 cs_white_color">فناوری الگوریتم نوآوری جدید ما به تحقق ایده های شما اختصاص
                 یافته است</h2>
             <div class="cs_height_66 cs_height_lg_40"></div>
             <div class="cs_video_block cs_style_1 cs_bg_filed cs_radius_5 position-relative d-flex justify-content-center align-items-center cs_ripple_activate overflow-hidden"
@@ -283,16 +289,19 @@
                     </div>
                     <p class="cs_counter_title mb-0">کار تمام شده است</p>
                 </div>
+
                 <div class="cs_counter cs_style_1 position-relative d-flex align-items-center">
-                    <div class="cs_counter_nmber mb-0 cs_fs_68 d-flex align-items-center cs_bold cs_primary_color"><span
-                            data-count-to="121" class="odometer"></span></div>
+                    <div class="cs_counter_nmber mb-0 cs_fs_68 d-flex align-items-center cs_bold cs_primary_color">
+                        <span data-count-to="121" class="odometer"></span></div>
                     <p class="cs_counter_title mb-0">اعضای ماهر تیم</p>
                 </div>
+
                 <div class="cs_counter cs_style_1 position-relative d-flex align-items-center">
-                    <div class="cs_counter_nmber mb-0 cs_fs_68 d-flex align-items-center cs_bold cs_primary_color"><span
-                            data-count-to="15" class="odometer"></span></div>
+                    <div class="cs_counter_nmber mb-0 cs_fs_68 d-flex align-items-center cs_bold cs_primary_color">
+                        <span data-count-to="15" class="odometer"></span></div>
                     <p class="cs_counter_title mb-0">با ارزش ترین جوایز</p>
                 </div>
+
             </div>
         </div>
     </div>
@@ -302,7 +311,7 @@
         <div class="cs_cta cs_style_1 cs_bg_filed position-relative cs_radius_5 overflow-hidden text-center"
              data-src="{% static 'assets/img/tech-startup/cta_bg.jpg' %}">
             <div class="cs_cta_in position-relative">
-                <h2 class="cs_cta_title cs_fs_50 cs_white_color mb-0">آیا پروژه یا هدف خاصی در ذهن دارید؟</h2>
+                <h2 class="text-center cs_section_title cs_fs_50 cs_white_color mb-0">آیا پروژه یا هدف خاصی در ذهن دارید؟</h2>
                 <div class="cs_height_45 cs_height_lg_30"></div>
                 <a href="{% url 'home' %}" class="cs_btn cs_style_1 cs_btn_white">با ما تماس بگیرید<span><i
                         class="fa-solid fa-arrow-right"></i></span></a>
