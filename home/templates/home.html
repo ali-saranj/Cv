@@ -1,4 +1,3 @@
-<!--test push-->
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}صفحه اصلی{% endblock title %}
@@ -11,15 +10,15 @@
              data-src="{% static 'assets/img/tech-startup/hero-bg.jpg' %}">
         <div class="container">
             <div class="cs_hero_text position-relative">
-                <h1 class="cs_hero_title cs_fs_68 cs_white_color">همراهی قوی در جهت رسیدن به قله‌های موفقیت در دنیای
-                    توسعه
-                    نرم‌افزار</h1>
-                <p class="cs_hero_subtitle">
+                <h1 class="cs_hero_title cs_fs_38 cs_white_color pb-5">
+                    همراهی قوی در جهت رسیدن به قله‌های موفقیت<br> در دنیای توسعه نرم‌افزار
+                </h1>
+               <p class="cs_hero_subtitle">
                     جایی که کد نویسی به هنر تبدیل می‌شود و نرم‌افزارها به نقاشی‌هایی از توانایی و خلاقیت.<br>
                     در این دنیای ترکیبی از تکنولوژی و هنر، یک تجربه بی‌نظیر را تجربه خواهید کرد و با نرم‌افزارهایی که به زندگی شما ارزش افزوده می‌دهند، همراه خواهید بود.
                 </p>
-                <div class="cs_hero_btns">
-                    <a href="{% url 'plans' %}" class="cs_btn cs_style_1 cs_btn_accent">مشاهده همه پروژه ها<span><i
+                <div class="cs_hero_btns pt-3">
+                    <a href="{% url 'plans' %}" class="cs_btn cs_style_1 cs_btn_accent ">مشاهده همه پروژه ها<span><i
                             class="fa-solid fa-arrow-right"></i></span></a><a
                         href="https://www.youtube.com/embed/VcaAVWtP48A"
                         class="cs_play_btn cs_style_1 cs_video_open"><img
@@ -27,67 +26,106 @@
                 </div>
             </div>
         </div>
+        <div id="background-wrap">
+            <div class="bubble cs_hero_shape_1"><img
+                    src="{% static 'assets/img/tech-startup/hero_circle_shape_1.png' %}"
+                    alt=""></div>
+            <div class="bubble cs_hero_shape_2"><img
+                    src="{% static 'assets/img/tech-startup/hero_circle_shape_1.png' %}"
+                    alt=""></div>
+            <div class="bubble cs_hero_shape_3"><img
+                    src="{% static 'assets/img/tech-startup/hero_circle_shape_1.png' %}"
+                    alt=""></div>
+            <div class="bubble cs_hero_shape_4"><img
+                    src="{% static 'assets/img/tech-startup/hero_circle_shape_1.png' %}"
+                    alt=""></div>
+            <div class="bubble cs_hero_shape_5"><img
+                    src="{% static 'assets/img/tech-startup/hero_circle_shape_1.png' %}"
+                    alt=""></div>
+            <div class="bubble cs_hero_shape_6"><img
+                    src="{% static 'assets/img/tech-startup/hero_circle_shape_1.png' %}"
+                    alt=""></div>
+            <div class="bubble cs_hero_shape_7"><img
+                    src="{% static 'assets/img/tech-startup/hero_circle_shape_1.png' %}"
+                    alt=""></div>
+            <div class="bubble cs_hero_shape_8"><img
+                    src="{% static 'assets/img/tech-startup/hero_circle_shape_1.png' %}"
+                    alt=""></div>
+            <div class="bubble cs_hero_shape_9"><img
+                    src="{% static 'assets/img/tech-startup/hero_circle_shape_1.png' %}"
+                    alt=""></div>
+            <div class="bubble cs_hero_shape_10"><img
+                    src="{% static 'assets/img/tech-startup/hero_circle_shape_1.png' %}"
+                    alt=""></div>
+        </div>
     </section>
     <div class="cs_height_95 cs_height_lg_60"></div>
     <section>
         <div class="container">
             <div class="cs_section_heading cs_style_1 cs_type_1 text-center">
-                <p class="cs_section_subtitle cs_accent_color cs_fs_18 mb-0">خدمات</p>
+                <p class="cs_accent_color cs_fs_38 mb-5 mt-0">خدمات</p>
                 <div class="cs_height_10 cs_height_lg_5"></div>
-                <h2 class="cs_section_title cs_fs_50 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                    توانمندی‌ها و تخصص‌ها</h2>
+                <h2 class="cs_section_title cs_fs_29 mb-5 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                    تیم
+                    “کد پلاس” یک تیم حرفه‌ای و متخصص در زمینه توسعه نرم‌افزار اندروید و وبسایت است</h2>
             </div>
             <div class="cs_height_85 cs_height_lg_45"></div>
-            <div class="row g-3">
+{# کادر خدمات #}
+            <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="cs_iconbox cs_style_4 cs_radius_5">
-                        <div class="cs_iconbox_icon"><img
-                                src="{% static 'assets/img/tech-startup/icons8-android.svg' %}" alt="Icon"></div>
-                        <div class="cs_iconbox_right">
-                            <h2 class="cs_iconbox_title cs_fs_29">طراحی و توسعه اپلیکیشن</h2>
+                        <div class="cs_iconbox_icon">
+                            <img src="{% static 'assets/img/tech-startup/icons8-android.svg' %}" alt="Icon">
+                        </div>
+                        <div class="cs_iconbox_right ">
+                            <h2 class="cs_iconbox_title cs_fs_21">طراحی و توسعه اپلیکیشن</h2>
                             <p class="cs_iconbox_subtitle">بهینه‌سازی عملکرد: عملکرد بهینه و سریع اپلیکیشن برای کاربران
                                 بسیار حائز اهمیت است. برنامه باید به طور مداوم بهینه‌سازی شود تا زمان بارگذاری صفحات و
                                 عملکرد کلی به حداقل برسد و تجربه کاربری را بهبود بخشد.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 overflow-hidden">
                     <div class="cs_iconbox cs_style_4 cs_radius_5">
-                        <div class="cs_iconbox_icon"><img src="{% static 'assets/img/tech-startup/icons8-site.png' %}"
-                                                          alt="Icon"></div>
+                        <div class="cs_iconbox_icon">
+                            <img src="{% static 'assets/img/tech-startup/icons8-site.png' %}" alt="Icon"></div>
                         <div class="cs_iconbox_right">
-                            <h2 class="cs_iconbox_title cs_fs_29">طراحی و توسعه وبسایت</h2>
+                            <h2 class="cs_iconbox_title cs_fs_21">طراحی و توسعه وبسایت</h2>
                             <p class="cs_iconbox_subtitle">طراحی و توسعه سایت نیازمند توجه به رابط کاربری جذاب،
-                                برنامه‌نویسی کد بهینه و امن، و تست منظم برای اطمینان از کیفیت و عملکرد صحیح است. این
-                                فرایند نیازمند هماهنگی بین تیم‌های طراحی و توسعه است تا سایت با تغییرات بازار همگام
-                                شود.</p>
+                                برنامه‌نویسی
+                                کد بهینه و امن، و تست منظم برای اطمینان از کیفیت و عملکرد صحیح است. این فرایند نیازمند
+                                هماهنگی بین تیم‌های طراحی و توسعه است تا سایت با تغییرات بازار همگام شود.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 overflow-hidden">
                     <div class="cs_iconbox cs_style_4 cs_radius_5">
-                        <div class="cs_iconbox_icon"><img src="{% static 'assets/img/tech-startup/icons8-ui.png' %}"
+                        <div class="cs_iconbox_icon"><img src="{% static 'assets/img/tech-startup/icons8-ui.png' %} "
                                                           alt="Icon"></div>
                         <div class="cs_iconbox_right">
-                            <h2 class="cs_iconbox_title cs_fs_29">طراحی واسط کاربری</h2>
+                            <h2 class="cs_iconbox_title cs_fs_21">طراحی واسط کاربری</h2>
                             <p class="cs_iconbox_subtitle">طراحی ظاهر اپلیکیشن و وب‌سایت اساسی‌ترین عامل در جلب توجه و
-                                راحتی کاربران است. از طریق استفاده از رابط کاربری جذاب، طراحی شیک و ساده، و استفاده از
-                                عناصر گرافیکی هماهنگ، تجربه کاربری بهبود می‌یابد. این باید باعث ایجاد ارتباط مثبت و
-                                یادآوری قوی در ذهن کاربران شود تا انگیزه آن‌ها برای استفاده از سرویس به حداکثر برسد.</p>
+                                راحتی
+                                کاربران است. از طریق استفاده از رابط کاربری جذاب، طراحی شیک و ساده، و استفاده از عناصر
+                                گرافیکی هماهنگ، تجربه کاربری بهبود می‌یابد. این باید باعث ایجاد ارتباط مثبت و یادآوری
+                                قوی در
+                                ذهن کاربران شود تا انگیزه آن‌ها برای استفاده از سرویس به حداکثر برسد.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 overflow-hidden">
                     <div class="cs_iconbox cs_style_4 cs_radius_5">
                         <div class="cs_iconbox_icon"><img src="{% static 'assets/img/tech-startup/icons8-idea.png' %}"
                                                           alt="Icon"></div>
                         <div class="cs_iconbox_right">
-                            <h2 class="cs_iconbox_title cs_fs_29">ایده‌پردازی</h2>
-                            <p class="cs_iconbox_subtitle">ایده‌پردازی فرآیندی خلاقانه است که افراد از ذهن خود برای
-                                ایجاد راهکارها، محصولات، خدمات یا تجربیات جدید استفاده می‌کنند. این فرآیند شامل تحلیل
-                                مسائل، تفکر خلاقانه، انتخاب بهترین گزینه‌ها و تبدیل ایده به واقعیت است. ایده‌پردازی
-                                اساسی برای نوآوری و پیشرفت است و می‌تواند از معاشرت با دیگران، مطالعه، تحقیق، و استفاده
-                                از تکنیک‌های خلاقانه به دست آید.</p>
+                            <h2 class="cs_iconbox_title cs_fs_21">ایده‌پردازی</h2>
+                            <p class="cs_iconbox_subtitle">
+                                ایده‌پردازی فرآیندی خلاقانه است که افراد از ذهن خود برای ایجاد راهکارها، محصولات، خدمات
+                                یا
+                                تجربیات جدید استفاده می‌کنند. این فرآیند شامل تحلیل مسائل، تفکر خلاقانه، انتخاب بهترین
+                                گزینه‌ها و تبدیل ایده به واقعیت است. ایده‌پردازی اساسی برای نوآوری و پیشرفت است و
+                                می‌تواند
+                                از معاشرت با دیگران، مطالعه، تحقیق، و استفاده از تکنیک‌های خلاقانه به دست آید.</p>
                         </div>
                     </div>
                 </div>
@@ -96,6 +134,7 @@
         <div class="cs_height_150 cs_height_lg_80"></div>
     </section>
 
+{# Why Us #}
 
     <div class="cs_about cs_style_2 cs_type_1">
         <div class="container">
@@ -166,7 +205,7 @@
         <div class="cs_height_143 cs_height_lg_75"></div>
         <div class="container">
             <div class="cs_section_heading cs_style_1 cs_type_1 text-center">
-                <p class="cs_section_subtitle cs_accent_color cs_fs_18 mb-0">چرا ما</p>
+                 <p class="cs_accent_color cs_fs_38 mb-5 mt-0">چرا ما !</p>
                 <div class="cs_height_10 cs_height_lg_5"></div>
                 <h2 class="cs_section_title cs_fs_50 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     تیمی با تجربه متحد</h2>
@@ -211,13 +250,14 @@
             </div>
         </div>
     </section>
+
     {#    <section>#}
     {#        <div class="cs_height_130 cs_height_lg_70"></div>#}
     {#        <div class="container">#}
     {#            <h2 class="text-center cs_fs_68 cs_style_1">کد پلاس: آینده را با ما بسازید</h2>#}
     {#            <div class="cs_height_66 cs_height_lg_40"></div>#}
     {#            <div class="cs_video_block cs_style_1 cs_bg_filed cs_radius_5 position-relative d-flex justify-content-center align-items-center cs_ripple_activate overflow-hidden"#}
-    {#                 data-src="{% static 'assets/img/tech-startup/hero_video_bg.jpg' %}"><a#}
+    {#                 data-src="{% static 'assets/img/tech-startup/hero_video_bg.jpg' %}"><a #}
     {#                    href="https://www.youtube.com/embed/VcaAVWtP48A" class="cs_hero_video_icon cs_video_open">#}
     {#            </a></div>#}
     {#        </div>#}
@@ -238,28 +278,32 @@
                     </div>
                     <p class="cs_counter_title mb-0">کار تمام شده است</p>
                 </div>
+
                 <div class="cs_counter cs_style_1 position-relative d-flex align-items-center">
-                    <div class="cs_counter_nmber mb-0 cs_fs_68 d-flex align-items-center cs_bold cs_primary_color"><span
-                            data-count-to="04" class="odometer"></span></div>
+                    <div class="cs_counter_nmber mb-0 cs_fs_68 d-flex align-items-center cs_bold cs_primary_color">
+                        <span data-count-to="04" class="odometer"></span></div>
                     <p class="cs_counter_title mb-0">اعضای ماهر تیم</p>
                 </div>
+
                 <div class="cs_counter cs_style_1 position-relative d-flex align-items-center">
-                    <div class="cs_counter_nmber mb-0 cs_fs_68 d-flex align-items-center cs_bold cs_primary_color"><span
-                            data-count-to="03" class="odometer"></span></div>
+                    <div class="cs_counter_nmber mb-0 cs_fs_68 d-flex align-items-center cs_bold cs_primary_color">
+                        <span data-count-to="03" class="odometer"></span></div>
                     <p class="cs_counter_title mb-0">با ارزش ترین جوایز</p>
                 </div>
+
             </div>
         </div>
     </div>
+
     <div class="cs_height_150 cs_height_lg_80">
     </div>
     <div class="container">
         <div class="cs_cta cs_style_1 cs_bg_filed position-relative cs_radius_5 overflow-hidden text-center"
              data-src="{% static 'assets/img/tech-startup/cta_bg.jpg' %}">
             <div class="cs_cta_in position-relative">
-                <h2 class="cs_cta_title cs_fs_50 cs_white_color mb-0">آیا پروژه یا هدف خاصی در ذهن دارید؟</h2>
+                <h2 class="text-center cs_section_title cs_fs_50 cs_white_color mb-0">آیا پروژه یا هدف خاصی در ذهن دارید؟</h2>
                 <div class="cs_height_45 cs_height_lg_30"></div>
-                <a href="{% url 'contact' %}" class="cs_btn cs_style_1 cs_btn_white">با ما تماس بگیرید<span><i
+                <a href="{% url 'home' %}" class="cs_btn cs_style_1 cs_btn_white">با ما تماس بگیرید<span><i
                         class="fa-solid fa-arrow-right"></i></span></a>
             </div>
         </div>
