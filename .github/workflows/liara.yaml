@@ -17,4 +17,4 @@ jobs:
           LIARA_TOKEN: ${{ secrets.LIARA_API_TOKEN }}
         run: |
           npm i -g @liara/cli@5
-          liara deploy --app="codeplas" --api-token="$LIARA_TOKEN" --no-app-logs
+          liara deploy --app="codeplus" --api-token="$LIARA_TOKEN" --no-app-logs
