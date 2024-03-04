@@ -85,6 +85,9 @@ h6 {
 
 p {
   margin-bottom: 15px;
+  line-height: 32px;
+  text-align: justify;
+  font-size: 18px;
 }
 
 ul {
@@ -4874,6 +4877,17 @@ hr {
   .cs_site-branding {
     max-width: 150px;
   }
+  .container{
+    padding:0 20px 0 20px;
+  }
+  .mobile-title {
+    font-size: 26px;
+  }
+  .p-title{
+    font-size: 16px;
+    text-align: justify;
+    padding:0 10px 0 10px;
+  }
 }
 /*--------------------------------------------------------------
   8. Footer
@@ -5416,6 +5430,7 @@ hr {
   .cs_isotop_col_4 .cs_isotop_item {
     width: 33.333333%;
   }
+
 }
 @media screen and (max-width: 991px) {
   .cs_isotop_col_4 .cs_grid_sizer,
@@ -6337,17 +6352,21 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px;
-  gap: 40px;
+  padding: 30px;
+  gap: 35px;
+  width: auto;
+  height: 100%;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  align-items: center;
 }
 @media (max-width: 1199px) {
   .cs_iconbox.cs_style_4 {
-    padding: 25px;
-    gap: 25px;
+    padding: 20px;
+    gap: 15px;
+
   }
 }
 @media (max-width: 400px) {
@@ -6385,6 +6404,7 @@ hr {
 }
 .cs_iconbox.cs_style_4 .cs_iconbox_icon img {
   width: 100%;
+  align-items: center;
 }
 .cs_iconbox.cs_style_4 .cs_btn.cs_style_1 {
   border: none;
@@ -6402,6 +6422,7 @@ hr {
 }
 .cs_iconbox.cs_style_4 .cs_iconbox_subtitle {
   margin-bottom: 25px;
+  text-align: justify;
 }
 .cs_iconbox.cs_style_4:hover::before {
   opacity: 1;
@@ -7668,7 +7689,9 @@ hr {
   .cs_counter_1_wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 20px 50px;
+    gap: 50px;
+    width: 450px;
+    margin: auto;
   }
   .cs_counter_1_wrap .cs_counter.cs_style_1 {
     width: calc(50% - 25px);
@@ -9595,7 +9618,24 @@ html .ui-button.ui-state-disabled:active {
   fill: #171717;
 }/*# sourceMappingURL=style.css.map */
 .slick-slider,.owl-carousel{direction:ltr!important;}
-body,h1,h2,h3,h4,h5,a,p{font-family: iranyekan!important;}
+body,h1,h2,h3,h4,h5{font-family: SamimBold!important;}
+a,p{font-family: SamimMed!important;}
+@font-face {
+  font-family: 'SamimMed';
+  src: url('fonts/Samim.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Samim.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Samim.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Samim.ttf')  format('truetype'),
+       url('fonts/Samim.woff2') format('woff2');/* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'SamimBold';
+  src: url('fonts/Samim-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Samim-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Samim-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Samim-Bold.ttf')  format('truetype'),
+       url('fonts/Samim-Bold.woff2') format('woff2');/* Safari, Android, iOS */
+}
 @font-face {
   font-family: 'iranyekan';
   src: url('fonts/iranyekanweblightfanum.eot'); /* IE9 Compat Modes */
@@ -9615,7 +9655,24 @@ body,h1,h2,h3,h4,h5,a,p{font-family: iranyekan!important;}
 }
 
 .slick-slider,.owl-carousel{direction:ltr!important;}
-body,h1,h2,h3,h4,h5,a,p{font-family: iranyekan!important;}
+body,h1,h2,h3,h4,h5{font-family: SamimBold!important;}
+a,p{font-family: SamimMed!important;}
+@font-face {
+  font-family: 'SamimMed';
+  src: url('fonts/Samim.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Samim.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Samim.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Samim.ttf')  format('truetype'),
+       url('fonts/Samim.woff2') format('woff2');/* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'SamimBold';
+  src: url('fonts/Samim-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Samim-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Samim-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Samim-Bold.ttf')  format('truetype'),
+       url('fonts/Samim-Bold.woff2') format('woff2');/* Safari, Android, iOS */
+}
 @font-face {
   font-family: 'iranyekan';
   src: url('fonts/iranyekanweblightfanum.eot'); /* IE9 Compat Modes */
