@@ -1,2 +1,4 @@
 # Project exclude paths
 /myenv/
+.venv
+db.sqlite3
