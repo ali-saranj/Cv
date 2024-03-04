@@ -6360,7 +6360,16 @@ hr {
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
-  align-items: center;
+
+}
+@media screen and (max-width: 767px) {
+  .cs_iconbox.cs_style_4 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cs_iconbox.cs_style_4 div{
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 1199px) {
   .cs_iconbox.cs_style_4 {
