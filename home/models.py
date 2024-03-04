@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
+
 # Create your models here.
 
 # Create your models here.
@@ -8,7 +9,7 @@ from django.urls import reverse
 class Plan(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to="images")
+    image = models.CharField(max_length=500)
 
     def __str__(self):
         return f"{self.pk}_{self.name}"
