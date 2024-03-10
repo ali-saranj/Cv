@@ -19,29 +19,30 @@
     <div class="cs_height_140 cs_height_lg_80"></div>
     <div class="cs_section_heading cs_style_1 cs_type_3 ">
         <div class="container">
-            <p class="cs_section_subtitle cs_accent_color cs_fs_21 mb-0 wow fadeInLeft" data-wow-duration="0.8s"
+            <p class="cs_section_heading cs_accent_color cs_fs_38 mb-5 wow fadeInLeft" data-wow-duration="0.8s"
                data-wow-delay="0.2s">مخاطب</p>
             <div class="cs_height_20 cs_height_lg_10"></div>
-            <h2 class="cs_section_title cs_fs_68 mb-0">برای اطلاعات بیشتر تماس بگیرید<br>اطلاعات و پشتیبانی</h2>
+            <h2 class="mobile-title cs_hero_title cs_fs_50 cs_white_color mb-5">برای اطلاعات بیشتر تماس بگیرید<br>اطلاعات و پشتیبانی</h2>
         </div>
         <div class="cs_shape_4"><img src="{% static 'assets/img/icons/mail.svg' %}" alt="Mail"></div>
     </div>
     <div class="cs_height_85 cs_height_lg_45"></div>
     <section>
         <div class="container">
-            <div class="row align-items-center cs_gap_y_45">
+            <div class="row align-items-center cs_gap_y_45 my-5">
                 <div class="col-lg-6">
-                    <h2 class="cs_fs_50">بیا سر بزن<br>جای ما!</h2>
+                    <h2 class="cs_fs_29"> با ما در تماس باشید<br> و متفاوت  بودن را تجربه کنید</h2>
+                    <p class="cs_section_subtitle">از توجه و اعتماد شما سپاسگزاریم. با صمیمیت و تمام قدرت در خدمت شما هستیم، آماده‌ایم تا به هر سوال، درخواست یا نیازی که دارید، با دقت و حرفه‌ای ترین رویکرد پاسخ دهیم. ارتباط با ما، در واقع ارتباط با راه حل‌ها و فرصت‌هایی است که به شما ارائه می‌دهیم. بیشتر از همه، شما و نیازهایتان برای ما اهمیت بی‌نظیری دارید. بنابراین، لطفاً به ما اعتماد کنید و با ما در ارتباط باشید تا بتوانیم در پیشبرد هدف‌های شما همراهی کنیم و تجربه‌ای بی‌نظیر و شگفت‌انگیز را برایتان خلق کنیم</p>
                     <div class="cs_height_55 cs_height_lg_30"></div>
                     <ul class="cs_mp0 cs_contact_info">
                         <li>
-                            <h3 class="cs_fs_29 cs_semibold">پست الکترونیک:</h3>
+                            <h3 class="cs_fs_21">پست الکترونیک:</h3>
                             <p class="mb-0"><a href="https://static.laralink.com/cdn-cgi/l/coodplus0@gmail.com"
                                                class="__cf_email__" data-cfemail="2b434e4747446b51425d4a4505484446">coodplus0@gmail.com</a>
                             </p>
                         </li>
                         <li>
-                            <h3 class="cs_fs_29 cs_semibold">تلفن:</h3>
+                            <h3 class="cs_fs_21">تلفن:</h3>
                             <p class="mb-0">09215945265</p>
                         </li>
                         {#                        <li>#}
@@ -52,20 +53,20 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="cs_contact_form_wrap">
-                        <div class="cs_gray_bg_3 cs_contact_form_bg"></div>
+                        <div class="cs_gray_bg_3 cs_contact_form_bg cs_radius_15"></div>
                         <form class="cs_contact_form" method="post">
                             {% csrf_token %}
-                            <label class="cs_fs_21 cs_semibold cs_primary_color">نام کامل شما</label>
-                            {% render_field form.name class="cs_form_field" placeholder="نام خود را تایپ کنید"%}
+                            <label class="cs_fs_21 cs_primary_color">نام کامل شما</label>
+                            {% render_field form.name class="cs_form_field p-2 cs_radius_3" placeholder="نام خود را تایپ کنید"%}
                             <div class="cs_height_38 cs_height_lg_25"></div>
-                            <label class="cs_fs_21 cs_semibold cs_primary_color">ایمیل معتبر بدهید</label>
-                            {% render_field form.email class="cs_form_field" placeholder="آدرس ایمیل خود را تایپ کنید"  %}
+                            <label class="cs_fs_21 cs_primary_color">ایمیل معتبر بدهید</label>
+                            {% render_field form.email class="cs_form_field p-2 cs_radius_3" placeholder="آدرس ایمیل خود را تایپ کنید"  %}
                             <div class="cs_height_38 cs_height_lg_25"></div>
-                            <label class="cs_fs_21 cs_semibold cs_primary_color">شماره تلفن</label>
-                            {% render_field form.phone class="cs_form_field" placeholder="شماره تلفن خود را تایپ کنید"  %}
+                            <label class="cs_fs_21 cs_primary_color">شماره تلفن</label>
+                            {% render_field form.phone class="cs_form_field p-2 cs_radius_3" placeholder="شماره تلفن خود را تایپ کنید"  %}
                             <div class="cs_height_38 cs_height_lg_25"></div>
-                            <label class="cs_fs_21 cs_semibold cs_primary_color">خلاصه پروژه</label>
-                            {% render_field form.description class="cs_form_field" placeholder="توضیحات" type="text" %}
+                            <label class="cs_fs_21 cs_primary_color">خلاصه پروژه</label>
+                            {% render_field form.description class="cs_form_field cs_height_130 p-2 cs_radius_3" placeholder="توضیحات" type="text" %}
                             <div class="cs_height_38 cs_height_lg_25"></div>
                             <input type="submit" value="ارسال" class="cs_btn cs_style_1">
                         </form>
