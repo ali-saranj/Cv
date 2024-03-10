@@ -3585,9 +3585,12 @@ hr {
   position: absolute;
   height: 100%;
   width: 50vw;
+    background-color: #0a53be;
   right: 0;
   top: 0;
+
 }
+
 @media (max-width: 991px) {
   .cs_contact_form_wrap .cs_contact_form_bg {
     width: 100%;
@@ -3607,7 +3610,7 @@ hr {
   border: none;
   background-color: #fff;
   line-height: 1.6em;
-  padding: 17px 25px;
+  padding: 10px 20px !important;
   outline: none;
 }
 
