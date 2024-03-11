@@ -3585,8 +3585,7 @@ hr {
   position: absolute;
   height: 100%;
   width: 50vw;
-    background-color: #0a53be;
-  right: 0;
+  left: 20px;
   top: 0;
 
 }
@@ -3926,6 +3925,7 @@ hr {
   list-style: none;
   padding: 0;
   z-index: 1;
+
 }
 
 .cs_swiper_navigation.cs_style_1 {
