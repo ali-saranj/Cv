@@ -167,7 +167,10 @@
         loop: true,
         speed: 1000,
         spaceBetween: 24,
-        autoplay:2000,
+          play:true,
+        autoplay: {
+            delay:2000
+        },
         pagination: {
           el: '.cs_pagination',
           clickable: true,
