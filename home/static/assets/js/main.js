@@ -787,3 +787,4 @@
   }
   document.addEventListener('mousemove', cursorMovingAnimation);
 })(jQuery); // End of use strict
+

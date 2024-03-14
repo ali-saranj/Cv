@@ -1,14 +1,14 @@
 {% load static %}
 <header class="cs_site_header cs_style_1 cs_color_1 cs_sticky_header cs_primary_color">
-    <div class="cs_main_header">
+    <div class="cs_main_header bg-dark">
         <div class="container">
             <div class="cs_main_header_in">
                 <div class="cs_main_header_right"><a class="cs_site_branding" href="{% url 'home' %}"><img
                         src="{% static 'assets/img/logocodeplus_heder.svg' %}" width="250" height="300" alt="Logo"></a>
                 </div>
                 <div class="cs_main_header_center">
-                    <div class="cs_nav cs_medium cs_primary_font">
-                        <ul class="cs_nav_list">
+                    <div class="cs_nav cs_medium">
+                        <ul class="cs_nav_list ">
                             <li><a href="{% url 'home' %}">صفحه اصلی</a></li>
                             <li><a href="{% url 'plans' %}">نمونه کار</a></li>
                             <li><a href="{% url 'about' %}">درباره ما </a></li>
@@ -16,6 +16,12 @@
                         </ul>
                     </div>
                 </div>
+                
+                <label class="switchToggle">
+                    <input type="checkbox" onclick="themeTogglle()">
+                        <span class="sliderToggle round"></span>
+                    
+                </label>
             </div>
         </div>
     </div>
