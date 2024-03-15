@@ -4318,6 +4318,7 @@ hr {
           justify-content: space-between;
   height: 90px;
   position: relative;
+
 }
 .cs_site_header.cs_style_1 .cs_main_header_right {
   display: -webkit-box;
@@ -9422,6 +9423,7 @@ html .ui-button.ui-state-disabled:active {
 .cs_dark .cs_iconbox_3_list .cs_hover_tab.active .cs_iconbox_icon {
   color: #fff;
 }
+
 .cs_dark .cs_hero.cs_style_1 .cs_video_block_wrap::before,
 .cs_dark .cs_progressbar.cs_style_1 .cs_progress_in::before,
 .cs_dark .cs_round_progress_wrap {
@@ -9702,4 +9704,3 @@ a,p{font-family: SamimMed!important;}
        url('fonts/iranyekanwebboldfanum.svg#iranyekan') format('svg'); /* Legacy iOS */
    font-weight:bold;
 }
-

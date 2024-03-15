@@ -8,7 +8,7 @@
                 </div>
                 <div class="cs_main_header_center">
                     <div class="cs_nav cs_medium">
-                        <ul class="cs_nav_list ">
+                        <ul class="cs_nav_list">
                             <li><a href="{% url 'home' %}">صفحه اصلی</a></li>
                             <li><a href="{% url 'plans' %}">نمونه کار</a></li>
                             <li><a href="{% url 'about' %}">درباره ما </a></li>
@@ -16,12 +16,8 @@
                         </ul>
                     </div>
                 </div>
-                
-                <label class="switchToggle">
-                    <input type="checkbox" onclick="themeTogglle()">
-                        <span class="sliderToggle round"></span>
-                    
-                </label>
+           {# Toggle Theme#}
+                <button class="btn rounded" id="toggle-theme"><i id="icon-theme" class="icono-moon"></i></button>
             </div>
         </div>
     </div>
