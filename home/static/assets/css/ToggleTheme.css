@@ -1,0 +1,14 @@
+.btn-toggle .icono-moon,
+.btn-toggle .icono-sun{
+    color: #fd6219;
+}
+@media screen and (max-width: 420px) {
+    .btn-toggle{
+    width: 40px;
+    height: 40px;
+    }
+    .btn-toggle .icono-moon,
+    .btn-toggle .icono-sun{
+        margin: auto;
+    }
+}
