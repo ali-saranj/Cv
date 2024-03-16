@@ -1,5 +1,6 @@
 localStorage.setItem("theme" , "light");
 const toggleThemeBtn = document.querySelectorAll("#toggle-theme");
+
 toggleThemeBtn.forEach(btn =>{
     btn.addEventListener("click",function(){
         const localTheme = localStorage.theme;

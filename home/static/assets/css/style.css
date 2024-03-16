@@ -3565,6 +3565,8 @@ hr {
 .cs_contact_form_wrap {
   position: relative;
   padding: 90px 110px 110px 0px;
+  border-radius: 20px;
+  background-color: black;
 }
 @media (max-width: 1400px) {
   .cs_contact_form_wrap {
@@ -3573,7 +3575,7 @@ hr {
 }
 @media (max-width: 1400px) {
   .cs_contact_form_wrap {
-    padding: 60px;
+    padding: 40px;
   }
 }
 @media (max-width: 575px) {
@@ -3608,7 +3610,7 @@ hr {
   display: block;
   width: 100%;
   border: none;
-  background-color: #fff;
+  background-color: #989797;
   line-height: 1.6em;
   padding: 10px 20px !important;
   outline: none;
@@ -4443,6 +4445,7 @@ hr {
   .cs_main_header .container-fluid {
     padding-right: 40px;
     padding-left: 40px;
+
   }
   .cs_main_header_center,
   .cs_top_header_center {
@@ -9704,3 +9707,6 @@ a,p{font-family: SamimMed!important;}
        url('fonts/iranyekanwebboldfanum.svg#iranyekan') format('svg'); /* Legacy iOS */
    font-weight:bold;
 }
+
+
+
