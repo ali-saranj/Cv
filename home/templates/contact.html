@@ -48,12 +48,12 @@
                     </ul>
                 </div>
                 <div class="col-lg-6">
-                    <div class="cs_contact_form_wrap">
+                    <div class="cs_contact_form_wrap cs_dark m-3">
                         <div class="cs_gray_bg_3 cs_contact_form cs_radius_15"></div>
-                        <form class="cs_contact_form" method="post">
+                        <form class="cs_contact_form cs_secondary_color" method="post">
                             {% csrf_token %}
                             <label class="cs_fs_21 cs_primary_color">نام کامل شما</label>
-                            {% render_field form.name class="cs_form_field p-2 cs_radius_3 " placeholder="نام خود را تایپ کنید" %}
+                            {% render_field form.name class="cs_form_field cs_gray_bg_2 p-2 cs_radius_3 " placeholder="نام خود را تایپ کنید" %}
                             <div class="cs_height_38 cs_height_lg_25"></div>
                             <label class="cs_fs_21 cs_primary_color">ایمیل معتبر بدهید</label>
                             {% render_field form.email class="cs_form_field p-2 cs_radius_3" placeholder="آدرس ایمیل خود را تایپ کنید" %}
