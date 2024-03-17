@@ -3566,7 +3566,6 @@ hr {
   position: relative;
   padding: 90px 110px 110px 0px;
   border-radius: 20px;
-  background-color: black;
 }
 @media (max-width: 1400px) {
   .cs_contact_form_wrap {
@@ -3587,7 +3586,7 @@ hr {
   position: absolute;
   height: 100%;
   width: 50vw;
-    background-color: #0a53be;
+  background-color: #0a53be;
   right: 0;
   top: 0;
 
@@ -3610,7 +3609,7 @@ hr {
   display: block;
   width: 100%;
   border: none;
-  background-color: #989797;
+  background-color: #e5e5e5;
   line-height: 1.6em;
   padding: 10px 20px !important;
   outline: none;
