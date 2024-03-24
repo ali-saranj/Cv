@@ -1,18 +1,33 @@
-localStorage.setItem("theme" , "light");
-const toggleThemeBtn = document.querySelectorAll("#toggle-theme");
 
-toggleThemeBtn.forEach(btn =>{
-    btn.addEventListener("click",function(){
-        const localTheme = localStorage.theme;
-        if (localTheme === "dark"){
-            document.querySelector("body").classList.remove("cs_dark")
-            document.querySelector("body").setAttribute("data-bs-theme", "light");
-            document.querySelector("#icon-theme").setAttribute("class", "icono-moon");
-            localStorage.theme = "light";
+let toggleThemeBtn = document.querySelector(".btn-toggle");
+let LocalTheme = localStorage.getItem("theme");
+
+// Default
+if (LocalTheme==="light") {
+    document.querySelector("#icon-theme").setAttribute("class", "icono-moon");
+    applyTheme('light');
+  } else {
+    document.querySelector("#icon-theme").setAttribute("class", "icono-sun");
+    applyTheme('dark');
+  }
+
+toggleThemeBtn.addEventListener("click",function(){
+  console.log("df")
+  if (localStorage.theme === "dark"){
+     document.querySelector("#icon-theme").setAttribute("class", "icono-moon");
+     applyTheme('light');
         } else {
-            document.querySelector("body").setAttribute("class", "cs_dark");
-            document.querySelector("#icon-theme").setAttribute("class", "icono-sun");
-            localStorage.setItem("theme" , "dark");
+           document.querySelector("#icon-theme").setAttribute("class", "icono-sun");
+           applyTheme('dark');
         }
-    })
 })
+
+  function applyTheme(theme) {
+    localStorage.setItem('theme', theme);
+    if (theme === 'dark') {
+      document.body.classList.add('cs_dark');
+    } else {
+      document.body.classList.remove('cs_dark');
+    }
+  }
+

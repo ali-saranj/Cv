@@ -8,7 +8,7 @@
                 </div>
                 <div class="cs_main_header_center">
                     <div class="cs_nav cs_medium">
-                        <ul class="cs_nav_list cs_fs_18" id="navbar">
+                        <ul class="cs_nav_list" id="navbar">
                             <li><a href="{% url 'home' %}">صفحه اصلی</a></li>
                             <li><a href="{% url 'plans' %}">نمونه کار</a></li>
                             <li><a href="{% url 'about' %}">درباره ما </a></li>
@@ -17,7 +17,10 @@
                     </div>
                 </div>
            {# Toggle Theme#}
-                <button class="btn rounded btn-toggle" id="toggle-theme"><i id="icon-theme" class="icono-moon"></i></button>
+                <button class="btn rounded btn-toggle">
+                    <i id="icon-theme" class="icono-moon"></i>
+                </button>
+
             </div>
         </div>
     </div>
