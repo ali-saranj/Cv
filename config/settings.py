@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'root',
-        'PASSWORD': 'M7SkYvAPacaHETMb51ij7xRw',
-        'HOST': 'nervous-dubinsky-msnkw4af0-db',
+        'PASSWORD': 'Aqufostii5yjSxOytoATwZp0',
+        'HOST': 'codepluse',
         'PORT': '5432',
     }
 }
