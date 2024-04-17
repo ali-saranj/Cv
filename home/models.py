@@ -26,3 +26,17 @@ class Project(models.Model):
 
     def __str__(self):
         return f"{self.pk}_{self.name}"
+
+
+# blog
+class Post(models.Model):
+    image = models.ImageField(upload_to="images/")
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    pub_date = models.DateTimeField(auto_now_add=True)
+
+    def get_absolute_url(self):
+        return reverse('blog:detail', args=[self.pk])
+
+    def __str__(self):
+        return self.title
