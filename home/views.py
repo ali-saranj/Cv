@@ -35,11 +35,17 @@ class ProjectCreateView(CreateView):
     template_name = 'contact.html'
 
 
-#blog
+# get_blog
 class BlogView(TemplateView):
     template_name = 'blog.html'
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
+
+    def get_context_data(self, pk):
+        context = super().get_context_data(pk=pk)
         posts = Post.objects.all()
         context['posts'] = posts
         return context
+
+# class Create_weblog(CreateView):
+#     model = Post
+#     fields = ['image', 'title', 'content', 'author']
+#     template_name = 'contact.html'

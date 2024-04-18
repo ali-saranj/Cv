@@ -6,6 +6,14 @@ from django.urls import reverse
 
 # Create your models here.
 
+# user
+class Author(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
+
 class Plan(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
@@ -34,6 +42,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True)
+    author = models.ForeignKey(Author, on_delete=models.PROTECT)
 
     def get_absolute_url(self):
         return reverse('blog:detail', args=[self.pk])

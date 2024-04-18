@@ -1,9 +1,12 @@
 from django.contrib import admin
 
-from home.models import Plan, Project, Post
-
+from home.models import Plan, Project, Post, Author
 
 # Register your models here.
+
+
+admin.site.register(Author)
+
 
 @admin.register(Plan)
 class Admin(admin.ModelAdmin):
@@ -17,4 +20,4 @@ class ProjectAdmin(admin.ModelAdmin):
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['pk', 'title']
+    list_display = ['pk', 'title', 'author']
