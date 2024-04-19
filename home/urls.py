@@ -26,6 +26,7 @@ urlpatterns = [
                   path('plans', views.plans, name="plans"),
                   path('contact', views.ProjectCreateView.as_view(), name="contact"),
                   path('blog', views.blog, name="blog"),
+                  path('blog_details/<int:pk>', views.blog_details, name='blog_details')
                   # path('create_weblog', views.Create_weblog.as_view(), name="create_weblog"),
                   # path('blog', views.BlogView.as_view(), name='blog'),
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL,
