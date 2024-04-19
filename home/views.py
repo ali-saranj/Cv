@@ -25,8 +25,8 @@ def content(request):
     return render(request, 'contact.html')
 
 
-def posts(request):
-    return render(request, 'blog.html')
+def blog(request):
+    return render(request, 'weblogPage.html')
 
 
 class ProjectCreateView(CreateView):
@@ -37,7 +37,7 @@ class ProjectCreateView(CreateView):
 
 # get_blog
 class BlogView(TemplateView):
-    template_name = 'blog.html'
+    template_name = 'weblogPage.html'
 
     def get_context_data(self):
         context = super().get_context_data()
