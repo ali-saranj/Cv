@@ -26,7 +26,9 @@ def content(request):
 
 
 def blog(request):
-    return render(request, 'weblogPage.html')
+    weblog = Post.objects.all()
+    context = {"blog": weblog}  # تغییر این خط
+    return render(request, 'weblogPage.html', context)  # تغییر این خط
 
 
 class ProjectCreateView(CreateView):
