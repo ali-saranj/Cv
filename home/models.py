@@ -44,6 +44,13 @@ class Post(models.Model):
     pub_date = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(Author, on_delete=models.PROTECT)
 
+    class Meta:
+        permissions = [
+            ("can_add_post", "Can add post"),
+            ("can_change_post", "Can change post"),
+            ("can_delete_post", "Can delete post"),
+        ]
+
     def get_absolute_url(self):
         return reverse('blog:detail', args=[self.pk])
 

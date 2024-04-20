@@ -27,7 +27,7 @@ def content(request):
 
 def blog(request):
     weblog = Post.objects.all()
-    context = {"blog": weblog}  # تغییر این خط
+    context = {"blog": weblog}
     return render(request, 'weblogPage.html', context)
 
 
