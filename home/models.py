@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from jalali_date import date2jalali, date2jalali
 
 
 # Create your models here.
@@ -53,6 +54,9 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('blog:detail', args=[self.pk])
+
+    def get_time(self):
+        return date2jalali(self.pub_date)
 
     def __str__(self):
         return self.title
