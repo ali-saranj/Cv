@@ -52,8 +52,6 @@ class Post(models.Model):
             ("can_delete_post", "Can delete post"),
         ]
 
-
-
     def get_absolute_url(self):
         return reverse('blog:detail', args=[self.pk])
 
