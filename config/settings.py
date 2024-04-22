@@ -45,9 +45,9 @@ INSTALLED_APPS = [
 
 # default settings (optional)
 JALALI_DATE_DEFAULTS = {
-   # if change it to true then all dates of the list_display will convert to the Jalali.
-   'LIST_DISPLAY_AUTO_CONVERT': False,
-   'Strftime': {
+    # if change it to true then all dates of the list_display will convert to the Jalali.
+    'LIST_DISPLAY_AUTO_CONVERT': False,
+    'Strftime': {
         'date': '%y/%m/%d',
         'datetime': '%H:%M:%S _ %y/%m/%d',
     },
@@ -69,9 +69,6 @@ JALALI_DATE_DEFAULTS = {
         }
     },
 }
-
-
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
