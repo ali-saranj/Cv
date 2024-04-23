@@ -50,19 +50,19 @@
                 <div class="col-lg-6">
                     <div class="cs_contact_form_wrap">
                         <div class="cs_gray_bg_3 cs_contact_form_bg cs_radius_15"></div>
-                        <form class="cs_contact_form" method="post">
+                        <form class="cs_contact_form" method="post" action="#">
                             {% csrf_token %}
                             <label class="cs_fs_21 cs_primary_color">نام کامل شما</label>
-                            {% render_field form.name class="cs_form_field p-2 cs_radius_3" placeholder="نام خود را تایپ کنید" %}
+                            {{ form.name|add_class:"cs_form_field p-2 cs_radius_3"|attr:"placeholder:نام خود را تایپ کنید" }}
                             <div class="cs_height_38 cs_height_lg_25"></div>
                             <label class="cs_fs_21 cs_primary_color">ایمیل معتبر بدهید</label>
-                            {% render_field form.email class="cs_form_field p-2 cs_radius_3" placeholder="آدرس ایمیل خود را تایپ کنید" %}
+                            {{ form.email|add_class:"cs_form_field p-2 cs_radius_3"|attr:"placeholder:آدرس ایمیل خود را تایپ کنید" }}
                             <div class="cs_height_38 cs_height_lg_25"></div>
                             <label class="cs_fs_21 cs_primary_color">شماره تلفن</label>
-                            {% render_field form.phone class="cs_form_field p-2 cs_radius_3" placeholder="شماره تلفن خود را تایپ کنید" %}
+                            {{ form.phone|add_class:"cs_form_field p-2 cs_radius_3"|attr:"placeholder:شماره تلفن خود را تایپ کنید" }}
                             <div class="cs_height_38 cs_height_lg_25"></div>
                             <label class="cs_fs_21 cs_primary_color">خلاصه پروژه</label>
-                            {% render_field form.description class="cs_form_field cs_height_130 p-2 cs_radius_3" placeholder="توضیحات" type="text" %}
+                            {{ form.description|add_class:"cs_form_field cs_height_130 p-2 cs_radius_3"|attr:"placeholder:توضیحات" }}
                             <div class="cs_height_38 cs_height_lg_25"></div>
                             <input type="submit" value="ارسال" class="cs_btn cs_style_1">
                         </form>

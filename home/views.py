@@ -1,8 +1,9 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.generic import CreateView
 from django.views.generic import TemplateView
 
-from .models import Plan, Project, Post
+from .models import Plan, Project, Post, Contact
 
 
 # Create your views here.
@@ -40,6 +41,22 @@ class ProjectCreateView(CreateView):
     model = Project
     fields = ['name', 'phone', 'email', 'description']
     template_name = 'contact.html'
+
+
+# content
+def content_data(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        description = request.POST.get('description')
+
+        content = Contact(name=name, email=email, phone=phone, description=description)
+        content.save()
+
+        return render(request, 'contact.html')
+    else:
+        return HttpResponse("Method not allowed", status=405)
 
 
 # get_blog

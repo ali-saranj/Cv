@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from home.models import Plan, Project, Post, Author
+from home.models import Plan, Project, Post, Author, Contact
 
 # Register your models here.
 
@@ -21,3 +21,8 @@ class ProjectAdmin(admin.ModelAdmin):
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     list_display = ['pk', 'title', 'author']
+
+
+@admin.register(Contact)
+class PostAdmin(admin.ModelAdmin):
+    list_display = ['name', 'email', 'description']

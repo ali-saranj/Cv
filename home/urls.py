@@ -25,6 +25,7 @@ urlpatterns = [
                   path('about', views.about, name="about"),
                   path('plans', views.plans, name="plans"),
                   path('contact', views.ProjectCreateView.as_view(), name="contact"),
+                  path('content_data', views.content_data, name="content_data"),
                   path('blog', views.blog, name="blog"),
                   path('blog_details/<int:pk>', views.blog_details, name='blog_details')
                   # path('create_weblog', views.Create_weblog.as_view(), name="create_weblog"),

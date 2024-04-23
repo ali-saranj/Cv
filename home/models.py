@@ -37,6 +37,17 @@ class Project(models.Model):
         return f"{self.pk}_{self.name}"
 
 
+# content
+class Contact(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone = models.CharField(max_length=13)
+    description = models.TextField()
+
+    def __str__(self):
+        return f"{self.pk}_{self.name}"
+
+
 # blog
 class Post(models.Model):
     image = models.ImageField(upload_to="images/")
@@ -55,8 +66,8 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse('blog:detail', args=[self.pk])
 
-    def get_time(self):
-        return date2jalali(self.pub_date)
+    # def get_time(self):
+    #     return date2jalali(self.pub_date)
 
     def __str__(self):
         return self.title
