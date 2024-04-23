@@ -53,8 +53,11 @@ def content_data(request):
 
         content = Contact(name=name, email=email, phone=phone, description=description)
         content.save()
+        contxt = {
+            'response': "اطلاعات ذخیره شد با شما تماس خواهیم گرفت"
+        }
 
-        return render(request, 'contact.html')
+        return render(request, 'contact.html', {'content': contxt})
     else:
         return HttpResponse("Method not allowed", status=405)
 

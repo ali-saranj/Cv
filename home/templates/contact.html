@@ -50,7 +50,7 @@
                 <div class="col-lg-6">
                     <div class="cs_contact_form_wrap">
                         <div class="cs_gray_bg_3 cs_contact_form_bg cs_radius_15"></div>
-                        <form class="cs_contact_form" method="post" action="#">
+                        <form class="cs_contact_form" method="post" action="/content_data">
                             {% csrf_token %}
                             <label class="cs_fs_21 cs_primary_color">نام کامل شما</label>
                             {{ form.name|add_class:"cs_form_field p-2 cs_radius_3"|attr:"placeholder:نام خود را تایپ کنید" }}
