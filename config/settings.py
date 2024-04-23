@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import os
 from pathlib import Path
-from jdatetime import datetime as jdatetime
+# from jdatetime import datetime as jdatetime
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'home',
     'widget_tweaks',
     'bootstrap5',
-    'jalali_date',
+    # 'jalali_date',
 ]
 
 # # default settings (optional)
