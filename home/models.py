@@ -71,3 +71,12 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Coment_Posts(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.EmailField()
+    content = models.CharField(max_length=500)
+
+    def __str__(self):
+        return f"{self.pk}_{self.name}"

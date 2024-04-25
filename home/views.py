@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.views.generic import CreateView
 from django.views.generic import TemplateView
 
-from .models import Plan, Project, Post, Contact
+from .models import Plan, Project, Post, Contact, Coment_Posts
 
 
 # Create your views here.
@@ -58,6 +58,22 @@ def content_data(request):
         }
 
         return render(request, 'contact.html', {'content': contxt})
+    else:
+        return HttpResponse("Method not allowed", status=405)
+
+
+def comment_post(request):
+    if request.method == 'POST':
+        name = request.POST.get('fullname')
+        email = request.POST.get('email')
+        comment = request.POST.get('comment')  # Changed 'content' to 'comment'
+        comment = Coment_Posts(name=name, email=email, content=comment)
+        comment.save()
+        context = {
+            'response': "اطلاعات ذخیره شد"
+        }
+
+        return render(request, 'weblog_details.html', {'context': context})  # Changed 'contaxt' to 'context'
     else:
         return HttpResponse("Method not allowed", status=405)
 
