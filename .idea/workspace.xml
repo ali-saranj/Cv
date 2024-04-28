@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25d73dbb-f7ce-42ce-9a43-b2dd11d65dfc" name="Changes" comment="Amin">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/weblogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/weblogPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/weblog_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/weblog_details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,6 +125,9 @@
       <workItem from="1713790133229" duration="1887000" />
       <workItem from="1713882430730" duration="775000" />
       <workItem from="1713883231540" duration="5581000" />
+      <workItem from="1714317240804" duration="184000" />
+      <workItem from="1714317605727" duration="230000" />
+      <workItem from="1714318014495" duration="1559000" />
     </task>
     <task id="LOCAL-00001" summary="Amin">
       <option name="closed" value="true" />
