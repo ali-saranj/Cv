@@ -1,5 +1,7 @@
+from tokenize import Comment
+
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import CreateView
 from django.views.generic import TemplateView
 
@@ -76,6 +78,12 @@ def comment_post(request):
         return render(request, 'weblog_details.html', {'context': context})  # Changed 'contaxt' to 'context'
     else:
         return HttpResponse("Method not allowed", status=405)
+
+
+# get_post_comment
+def get_comment(request):
+    comments = Coment_Posts.objects.all()
+    return render(request, 'get_all_comment.html', {'comments': comments})
 
 
 # get_blog
