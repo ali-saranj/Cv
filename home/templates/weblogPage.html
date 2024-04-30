@@ -3,87 +3,59 @@
 {% block title %}بلاگ{% endblock %}
 {% block content %}
 
-    {#    <h1>مطالب</h1>#}
-    {#    {% for post in blog %}#}
-    {#        <h2>{{ post.title }}</h2>#}
-    {#        <p>{{ post.content }}</p>#}
-    {#    {% endfor %}#}
+    <div class="cs_height_200 cs_height_lg_60"></div>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        {% for post in blog %}
+                            <div class="col-lg-12 col-md-12 mb-5">
+                                <div class=""><img src="{{ post.image.url }}" alt="" class="img-fluid"></div>
+                                <div class="blog-item-content">
+                                    <div class="blog-item-meta mb-3 mt-4 ">
+                                        <span class="mr-3 text-white">نویسنده : {{ post.author }}</span>
+                                        <span class="text-bg-light px-2 rounded-3 text-capitalize mx-2 text-right">تاریخ انتشار : {{ post.pub_date }}</span>
+                                    </div>
+                                    <h2 class="mt-3 mb-3">
+                                        <a href="{% url 'blog_details' post.id %}"
+                                           title="{{ post.title }}">{{ post.title }}</a>
+                                    </h2>
+                                    <p class="mb-4">{{ post.content|linebreaksbr|truncatechars:100 }}</p>
+                                    <a href="{% url 'blog_details' post.id %}" class="cs_btn cs_style_1 p-2">بیشتر
+                                        بخوانید...</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
 
-    {% for post in blog %}
-<div class="cs_height_200 cs_height_lg_60"></div>
-<section class="section">
-    <div class="container">
-         <div class="row">
-              <div class="col-lg-8">
-                   <div class="row">
+                <div class="col-lg-4 mt-5">
+                    <div class="sidebar-wrap pl-lg-4 mt-lg-0">
+                        <div class="sidebar-widget search mt-5 mb-5">
+                            <h5>جستجو کنید!</h5>
+                            <form action="#" class="search-form">
+                                <input type="text" class="form-control" placeholder="جستجو ...">
+                            </form>
+                        </div>
 
-                       <div class="col-lg-12 col-md-12 mb-5">
-                           <div class=""><img src="{{ post.image.url }}" alt="" class="img-fluid"></div>
-                           <div class="blog-item-content">
-                               <div class="blog-item-meta mb-3 mt-4 ">
-                                   <span class="mr-3 text-white">نویسنده : {{ post.author }}</span>
-                                   <span class="text-bg-light px-2 rounded-3 text-capitalize mx-2 text-right">تاریخ انتشار : {{ post.pub_date }}</span>
-                               </div>
-                               <h2 class="mt-3 mb-3">
-                                   <a href="{% url 'blog_details' post.id %}" title="{{ post.title }}">{{ post.title }}</a>
-                               </h2>
-                               <p class="mb-4">{{ post.content|linebreaksbr|truncatechars:100 }}</p>
-                               <a href="{% url 'blog_details' post.id %}" class="cs_btn cs_style_1 p-2">بیشتر بخوانید...</a>
-                               
-                           </div>
-                       </div>
-                   </div>
-              </div>
-             <div class="col-lg-4 mt-5">
-                  <div class="sidebar-wrap pl-lg-4 mt-lg-0">
-                      <div class="sidebar-widget search mt-5 mb-5">
-                          <h5>جستجو کنید!</h5>
-                          <form action="#" class="search-form">
-                              <input type="text" class="form-control" placeholder="جستجو ...">
-                          </form>
-                      </div>
+                        <hr>
 
-                      <hr>
+                        <div class="sidebar-widget latest-post my-5 ">
+                            <h5>پربازدید</h5>
+                            <!-- اینجا بقیه کد‌ها قرار می‌گیرد -->
+                        </div>
 
-                      <div class="sidebar-widget latest-post my-5 ">
-                          <h5>پربازدید</h5>
+                        {#                    <hr>#}
 
-                          <div class="py-2">
-                              <span class="text-sm text-muted">1 اردیبهشت 1403</span>
-                              <h6 class="my-2"><a href="#">آموزش انتشار اپلیکیشن در اپ استور</a></h6>
-                          </div>
+                        {#                    <div class="sidebar-widget tags my-5">#}
+                        {#                        <h5 class="mb-4">برچسب ها</h5>#}
+                        {#                        <!-- اینجا بقیه کد‌ها قرار می‌گیرد -->#}
+                        {#                    </div>#}
+                    </div>
+                </div>
 
-                          <div class="py-2">
-                              <span class="text-sm text-muted text-danger-emphasis">1 اردیبهشت 1403</span>
-                              <h6 class="my-2"><a href="#">آموزش انتشار اپلیکیشن در اپ استور</a></h6>
-                          </div>
-
-                          <div class="py-2">
-                              <span class="text-sm text-primary-emphasis">1 اردیبهشت 1403</span>
-                              <h6 class="my-2"><a href="#">آموزش انتشار اپلیکیشن در اپ استور</a></h6>
-                          </div>
-                      </div>
-
-                      <hr>
-                      <div class="sidebar-widget tags my-5">
-                          <h5 class="mb-4">برچسب ها</h5>
-                          <span class="cs_radius_10 bg-info-subtle px-2 text-black mx-1">
-                               <a href="#">اپلیکیشن</a>
-                          </span>
-                          <span class="cs_radius_10 bg-info-subtle px-2 text-black mx-1">
-                              <a href="#">برنامه نویسی</a>
-                          </span>
-                          <span class="cs_radius_10 bg-info-subtle px-2 text-black mx-1">
-                              <a href="#">طراحی سایت</a>
-                          </span>
-                      </div>
-                  </div>
-                      
-             </div>
-             
+            </div>
         </div>
-    </div>
-</section>
-{% endfor %}
-{% endblock %}   
-    
+    </section>
+{% endblock %}

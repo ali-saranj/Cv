@@ -83,7 +83,7 @@ def comment_post(request):
 # get_post_comment
 def get_comment(request):
     comments = Coment_Posts.objects.all()
-    return render(request, 'get_all_comment.html', {'comments': comments})
+    return render(request, 'weblog_details.html', {'comments': comments})
 
 
 # get_blog
