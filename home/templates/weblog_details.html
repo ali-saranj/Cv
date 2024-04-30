@@ -3,6 +3,23 @@
 {% block title %}جزییات صفحه وبلاگ{% endblock %}
 {% block content %}
 
+    <!-- کدهای قبلی -->
+
+    {% comment %} تگ‌های سئو {% endcomment %}
+
+    <title>{{ post.title }}</title>
+
+    <meta name="description" content="{{ post.content|striptags|slice:":160" }}">
+
+    <meta property="og:title" content="{{ post.title }}">
+    <meta property="og:description" content="{{ post.content|striptags|slice:":160" }}">
+    <meta property="og:image" content="{{ post.image.url }}">
+
+    <link rel="canonical" href="http://127.0.0.1:8000/">
+
+    <!-- کدهای بعدی -->
+
+
 
     <div class="cs_height_200 cs_height_lg_60"></div>
     <section class="section blog-wrap">
@@ -79,7 +96,6 @@
             <input type="submit" value="ارسال" class="cs_btn cs_style_1">
         </form>
     </div>
-
 
 
 {% endblock %}
