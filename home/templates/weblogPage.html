@@ -3,6 +3,10 @@
 {% block title %}بلاگ{% endblock %}
 {% block content %}
 
+    <meta name="keywords" content="کلمه کلیدی ۱, کلمه کلیدی ۲, ...">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="http://127.0.0.1:8000/blog">
+
 
     <section class="section">
         <div class="container mb-5">
@@ -45,23 +49,24 @@
                         </div>
 
                         <hr>
-                        {% for new_post in new_posts %}
-                            <div class="sidebar-widget latest-post my-5">
-                                <h5>پربازدید</h5>
-                                <!-- اینجا بقیه کد‌ها قرار می‌گیرد -->
+                        <div class="sidebar-widget latest-post my-5">
+                            <h5 style="color: #fd7e14">پربازدید</h5>
+                            {% for new_post in new_posts %}
                                 <div class="m-3 my-4">
                                     <h6>
                                         <a href="{% url 'blog_details' new_post.id %}">{{ new_post.title }}</a>
                                     </h6>
+                                    <hr>
+
                                 </div>
-                                {#                                <div class="m-3 my-4">#}
-                                {#                                    <h6>مقاله تستسی 2 </h6>#}
-                                {#                                    <p class="cs_fs_16">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با#}
-                                {#                                        استفاده از طراحان گرافیک است، چاپگر…</p>#}
-                                {#                                </div>#}
-                            </div>
-                        {% endfor %}
-                        <hr>
+                            {% endfor %}
+
+                            {#                                <div class="m-3 my-4">#}
+                            {#                                    <h6>مقاله تستسی 2 </h6>#}
+                            {#                                    <p class="cs_fs_16">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با#}
+                            {#                                        استفاده از طراحان گرافیک است، چاپگر…</p>#}
+                            {#                                </div>#}
+                        </div>
 
                         {#                    <hr>#}
 
