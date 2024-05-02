@@ -30,8 +30,19 @@ def content(request):
 
 def blog(request):
     weblog = Post.objects.all()
-    context = {"blog": weblog}
+    new_posts = Post.objects.filter(is_featured=True)
+    context = {"blog": weblog, "new_posts": new_posts}
     return render(request, 'weblogPage.html', context)
+
+
+class is_featured(TemplateView):
+    template_name = 'weblogPage.html'
+
+    def get_context_data(self):
+        context = super().get_context_data()
+        is_featured = Post.objects.filter(is_featured=True)
+        context['is_featured'] = is_featured
+        return context
 
 
 def blog_details(request, pk):

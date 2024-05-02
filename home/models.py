@@ -48,6 +48,13 @@ class Contact(models.Model):
         return f"{self.pk}_{self.name}"
 
 
+class Grouping(models.Model):
+    name = models.CharField(max_length=100, null=True)
+
+    def __str__(self):
+        return f"{self.pk}_{self.name}"
+
+
 # blog
 class Post(models.Model):
     image = models.ImageField(upload_to="images/")
@@ -55,6 +62,8 @@ class Post(models.Model):
     content = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(Author, on_delete=models.PROTECT)
+    is_featured = models.BooleanField(default=False)
+    Grouping = models.ForeignKey(Grouping, on_delete=models.PROTECT, null=True)
 
     class Meta:
         permissions = [

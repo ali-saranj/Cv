@@ -10,10 +10,11 @@
 
                 <div class="col-lg-8">
                     <div class="row mx-1">
-                     <div class="cs_height_200 cs_height_lg_60"></div>
+                        <div class="cs_height_200 cs_height_lg_60"></div>
                         {% for post in blog %}
                             <div class="col-lg-12 col-md-12 mb-5">
-                                <div class="rounded-2"><img src="{{ post.image.url }}" alt="" class="img-fluid rounded-2"></div>
+                                <div class="rounded-2"><img src="{{ post.image.url }}" alt=""
+                                                            class="img-fluid rounded-2"></div>
                                 <div class="blog-item-content">
                                     <div class="blog-item-meta mb-3 mt-4 ">
                                         <span class="mr-3 text-white">نویسنده : {{ post.author }}</span>
@@ -44,20 +45,22 @@
                         </div>
 
                         <hr>
-
-                        <div class="sidebar-widget latest-post my-5">
-                            <h5>پربازدید</h5>
-                            <!-- اینجا بقیه کد‌ها قرار می‌گیرد -->
-                            <div class="m-3 my-4">
-                                <h6>مقاله تستسی 2 </h6>
-                                <p class="cs_fs_16">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگر…</p>
+                        {% for new_post in new_posts %}
+                            <div class="sidebar-widget latest-post my-5">
+                                <h5>پربازدید</h5>
+                                <!-- اینجا بقیه کد‌ها قرار می‌گیرد -->
+                                <div class="m-3 my-4">
+                                    <h6>
+                                        <a href="{% url 'blog_details' new_post.id %}">{{ new_post.title }}</a>
+                                    </h6>
+                                </div>
+                                {#                                <div class="m-3 my-4">#}
+                                {#                                    <h6>مقاله تستسی 2 </h6>#}
+                                {#                                    <p class="cs_fs_16">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با#}
+                                {#                                        استفاده از طراحان گرافیک است، چاپگر…</p>#}
+                                {#                                </div>#}
                             </div>
-                             <div class="m-3 my-4">
-                                <h6>مقاله تستسی 2 </h6>
-                                <p  class="cs_fs_16">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگر…</p>
-                            </div>
-                        </div>
-                        
+                        {% endfor %}
                         <hr>
 
                         {#                    <hr>#}
