@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25d73dbb-f7ce-42ce-9a43-b2dd11d65dfc" name="Changes" comment="change details">
+    <list default="true" id="25d73dbb-f7ce-42ce-9a43-b2dd11d65dfc" name="Changes" comment="Amin">
+      <change afterPath="$PROJECT_DIR$/home/templates/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/weblogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/weblogPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/plans.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/plans.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/weblog_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/weblog_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +96,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
       </set>
     </attachedChunks>
   </component>
@@ -123,14 +130,41 @@
       <workItem from="1713524966525" duration="7087000" />
       <workItem from="1713608153545" duration="5334000" />
       <workItem from="1713697042057" duration="725000" />
-      <workItem from="1713790133229" duration="1887000" />
+      <workItem from="1713790133229" duration="6390000" />
+      <workItem from="1713849661432" duration="300000" />
+      <workItem from="1713852194069" duration="3474000" />
+      <workItem from="1713855697026" duration="40000" />
       <workItem from="1713882430730" duration="775000" />
       <workItem from="1713883231540" duration="5581000" />
-      <workItem from="1714317240804" duration="184000" />
-      <workItem from="1714317605727" duration="230000" />
-      <workItem from="1714318014495" duration="1559000" />
-      <workItem from="1714487814824" duration="3502000" />
-      <workItem from="1714566203984" duration="2924000" />
+      <workItem from="1714041842830" duration="135000" />
+      <workItem from="1714042007518" duration="795000" />
+      <workItem from="1714057622959" duration="783000" />
+      <workItem from="1714058440331" duration="830000" />
+      <workItem from="1714240175940" duration="388000" />
+      <workItem from="1714240598256" duration="689000" />
+      <workItem from="1714301719778" duration="307000" />
+      <workItem from="1714371975764" duration="2962000" />
+      <workItem from="1714375443218" duration="2042000" />
+      <workItem from="1714395100524" duration="2743000" />
+      <workItem from="1714452727451" duration="2815000" />
+      <workItem from="1714562326688" duration="303000" />
+      <workItem from="1714568059716" duration="32000" />
+      <workItem from="1714568773268" duration="162000" />
+      <workItem from="1714568982166" duration="1935000" />
+      <workItem from="1714573735310" duration="3258000" />
+      <workItem from="1714594951367" duration="2298000" />
+      <workItem from="1714642109645" duration="1449000" />
+      <workItem from="1714652104599" duration="669000" />
+      <workItem from="1714833893237" duration="285000" />
+      <workItem from="1714907089624" duration="185000" />
+      <workItem from="1714907481766" duration="555000" />
+      <workItem from="1715014793049" duration="3931000" />
+      <workItem from="1715018751668" duration="906000" />
+      <workItem from="1715019765227" duration="596000" />
+      <workItem from="1715058181209" duration="1393000" />
+      <workItem from="1715329805709" duration="1252000" />
+      <workItem from="1715332820574" duration="689000" />
+      <workItem from="1715335626468" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="Amin">
       <option name="closed" value="true" />
@@ -244,14 +278,87 @@
       <option name="project" value="LOCAL" />
       <updated>1713790988422</updated>
     </task>
-    <task id="LOCAL‎−۰۰۰۱۵" summary="change details">
+    <task id="LOCAL-00015" summary="Amin">
       <option name="closed" value="true" />
-      <created>1714490746189</created>
-      <option name="number" value="LOCAL‎−۰۰۰۱۵" />
-      <option name="presentableId" value="LOCAL‎−۰۰۰۱۵" />
-      <updated>1714490746189</updated>
+      <created>1713792042125</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713792042125</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713854952512</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713854952512</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713855721621</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713855721621</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714042702536</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714042702536</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714376799114</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714376799114</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714453906538</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714453906538</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714454288542</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1714454288542</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714455449978</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714455449978</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714642252893</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714642252893</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714652703500</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714652703501</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +377,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Amin" />
-    <MESSAGE value="change details" />
-    <option name="LAST_COMMIT_MESSAGE" value="change details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amin" />
   </component>
 </project>

@@ -30,6 +30,7 @@ urlpatterns = [
                   path('comments', views.comment_post, name="comments"),
                   path('blog_details/<int:pk>', views.blog_details, name='blog_details'),
                   path('comment_list', views.get_comment, name="comment_list"),
+                  path('Add_form', views.Contact_us_view, name="Add_form"),
                   # path('create_weblog', views.Create_weblog.as_view(), name="create_weblog"),
                   # path('blog', views.BlogView.as_view(), name='blog'),
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL,

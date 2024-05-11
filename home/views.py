@@ -1,11 +1,11 @@
 from tokenize import Comment
 
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import CreateView
 from django.views.generic import TemplateView
 
-from .models import Plan, Project, Post, Contact, Coment_Posts
+from .models import Plan, Project, Post, Contact, Coment_Posts, Contact_us
 
 
 # Create your views here.
@@ -18,10 +18,14 @@ def about(request):
     return render(request, 'about.html')
 
 
-def plans(request):
-    p = Plan.objects.all()
-    content = {"plans": p}
-    return render(request, 'plans.html', content)
+class plans(TemplateView):
+    template_name = 'plans.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data()
+        p = Plan.objects.all()
+        context['p'] = p
+        return context
 
 
 def content(request):
@@ -95,6 +99,21 @@ def comment_post(request):
 def get_comment(request):
     comments = Coment_Posts.objects.all()
     return render(request, 'weblog_details.html', {'comments': comments})
+
+
+# ارتباط با ما در صفحه پلن
+def Contact_us_view(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        location = request.POST.get('location')
+        add_form = Contact_us(name=name, email=email, phone=phone, location=location)
+        add_form.save()
+        context = {
+            'response': "اطلاعات ذخیره شد"
+        }
+    return render(request, 'contact_us.html')
 
 
 # get_blog

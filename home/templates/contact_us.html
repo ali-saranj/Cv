@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}ارتباط با ما {% endblock %}
+{% block content %}
+
+    <div class="col-lg-12 my-5">
+        <form class="cs_contact_form mb-5 shadow p-4" method="POST" action="/Add_form">
+            {% csrf_token %}
+            <h4 class="mb-4">بعد از گذاشتن پیام با شما تماس خواهیم گرفت ...</h4>
+            <div class="row  gy-4 ">
+                <div class="col-md-6">
+                    <label class="cs_fs_18 cs_primary_color">نام و نام خانوادگی:</label>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="name" id="name"
+                               placeholder="نام و نام خانوادگی خود را وارد کنید...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="cs_fs_18 cs_primary_color">ایمیل:</label>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" id="email"
+                               placeholder="ایمیل خود را وارد کنید...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="cs_fs_18 cs_primary_color">شماره تماس:</label>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="phone" id="phone"
+                               placeholder="شماره تماس خود را وارد کنید...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="cs_fs_18 cs_primary_color">منطقه:</label>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="location" id="location"
+                               placeholder="مکان خود را وارد کنید...">
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="ارسال" class="cs_btn cs_style_1">
+        </form>
+    </div>
+
+{% endblock %}
