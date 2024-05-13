@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import os
 from pathlib import Path
-# from jdatetime import datetime as jdatetime
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,37 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
-    'widget_tweaks',
     'bootstrap5',
-    # 'jalali_date',
+    'widget_tweaks',
 ]
-
-# # default settings (optional)
-# JALALI_DATE_DEFAULTS = {
-#     # if change it to true then all dates of the list_display will convert to the Jalali.
-#     'LIST_DISPLAY_AUTO_CONVERT': False,
-#     'Strftime': {
-#         'date': '%y/%m/%d',
-#         'datetime': '%H:%M:%S _ %y/%m/%d',
-#     },
-#     'Static': {
-#         'js': [
-#             # loading datepicker
-#             'admin/js/django_jalali.min.js',
-#             # OR
-#             # 'admin/jquery.ui.datepicker.jalali/scripts/jquery.ui.core.js',
-#             # 'admin/jquery.ui.datepicker.jalali/scripts/calendar.js',
-#             # 'admin/jquery.ui.datepicker.jalali/scripts/jquery.ui.datepicker-cc.js',
-#             # 'admin/jquery.ui.datepicker.jalali/scripts/jquery.ui.datepicker-cc-fa.js',
-#             # 'admin/js/main.js',
-#         ],
-#         'css': {
-#             'all': [
-#                 'admin/jquery.ui.datepicker.jalali/themes/base/jquery-ui.min.css',
-#             ]
-#         }
-#     },
-# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -103,23 +74,24 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'root',
-#         'PASSWORD': 'M7SkYvAPacaHETMb51ij7xRw',
-#         'HOST': 'nervous-dubinsky-msnkw4af0-db',
-#         'PORT': '5432',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'root',
+        'PASSWORD': 'M7SkYvAPacaHETMb51ij7xRw',
+        'HOST': 'nervous-dubinsky-msnkw4af0-db',
+        'PORT': '5432',
     }
 }
+
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
