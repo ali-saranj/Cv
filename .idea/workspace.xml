@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="25d73dbb-f7ce-42ce-9a43-b2dd11d65dfc" name="Changes" comment="Amin">
+      <change beforePath="$PROJECT_DIR$/.idea/Cv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Cv.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0002_contact.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0003_coment_posts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0004_post_is_featured.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0005_grouping_post_grouping.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0006_post_slug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0007_remove_post_slug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0008_contact_us.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0009_rename_location_contact_us_location.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodyActiveAccount">
+    <option name="activeAccountId" value="VXNlcjo0MjIwMDA=" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="Cv" sdk-home="$PROJECT_DIR$/../WorkAppApi/.venv/Scripts/python.exe" working-directory="$PROJECT_DIR$/.idea">
+    <option name="sdk">
+      <Sdk />
+    </option>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+    <option name="mySdkHome" value="$PROJECT_DIR$/../WorkAppApi/.venv/Scripts/python.exe" />
+    <option name="mySdk">
+      <Sdk />
+    </option>
+    <option name="myModuleName" value="Cv" />
+    <option name="myWorkingDirectory" value="$PROJECT_DIR$/.idea" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="posts_Models" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;4013amin&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ali-saranj/Cv.git&quot;,
+    &quot;accountId&quot;: &quot;723fd986-8f53-43d3-b978-dd2373c6be1c&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2eSzVjYvIPJXdzMLHA1o7Yl1n3w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.Cv.executor": "Run",
+    "RunOnceActivity.CodyAccountHistoryMigration": "true",
+    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
+    "RunOnceActivity.CodyHistoryLlmMigration": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "posts__Models",
+    "last_opened_file_path": "C:/Users/ali/PycharmProjects/Cv/.idea",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "http.proxy",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Cv" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Cv" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="config.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (Cv)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25d73dbb-f7ce-42ce-9a43-b2dd11d65dfc" name="Changes" comment="" />
+      <created>1711912793409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711912793409</updated>
+      <workItem from="1711912794632" duration="1921000" />
+      <workItem from="1711914741634" duration="1067000" />
+      <workItem from="1711969168388" duration="33000" />
+      <workItem from="1712074303693" duration="3819000" />
+      <workItem from="1712078277878" duration="4991000" />
+      <workItem from="1712654575871" duration="1065000" />
+      <workItem from="1712856633741" duration="987000" />
+      <workItem from="1713095212970" duration="191000" />
+      <workItem from="1713095434952" duration="162000" />
+      <workItem from="1713347099010" duration="1201000" />
+      <workItem from="1713374059616" duration="2913000" />
+      <workItem from="1713431583549" duration="4269000" />
+      <workItem from="1713436108281" duration="116000" />
+      <workItem from="1713437278181" duration="586000" />
+      <workItem from="1713437991557" duration="65000" />
+      <workItem from="1713464672068" duration="3622000" />
+      <workItem from="1713513041663" duration="1666000" />
+      <workItem from="1713514757219" duration="2449000" />
+      <workItem from="1713524966525" duration="7087000" />
+      <workItem from="1713608153545" duration="5334000" />
+      <workItem from="1713697042057" duration="725000" />
+      <workItem from="1713790133229" duration="6390000" />
+      <workItem from="1713849661432" duration="300000" />
+      <workItem from="1713852194069" duration="3474000" />
+      <workItem from="1713855697026" duration="40000" />
+      <workItem from="1713882430730" duration="775000" />
+      <workItem from="1713883231540" duration="5581000" />
+      <workItem from="1714041842830" duration="135000" />
+      <workItem from="1714042007518" duration="795000" />
+      <workItem from="1714057622959" duration="783000" />
+      <workItem from="1714058440331" duration="830000" />
+      <workItem from="1714240175940" duration="388000" />
+      <workItem from="1714240598256" duration="689000" />
+      <workItem from="1714301719778" duration="307000" />
+      <workItem from="1714371975764" duration="2962000" />
+      <workItem from="1714375443218" duration="2042000" />
+      <workItem from="1714395100524" duration="2743000" />
+      <workItem from="1714452727451" duration="2815000" />
+      <workItem from="1714562326688" duration="303000" />
+      <workItem from="1714568059716" duration="32000" />
+      <workItem from="1714568773268" duration="162000" />
+      <workItem from="1714568982166" duration="1935000" />
+      <workItem from="1714573735310" duration="3258000" />
+      <workItem from="1714594951367" duration="2298000" />
+      <workItem from="1714642109645" duration="1449000" />
+      <workItem from="1714652104599" duration="669000" />
+      <workItem from="1714833893237" duration="285000" />
+      <workItem from="1714907089624" duration="185000" />
+      <workItem from="1714907481766" duration="555000" />
+      <workItem from="1715014793049" duration="3931000" />
+      <workItem from="1715018751668" duration="906000" />
+      <workItem from="1715019765227" duration="596000" />
+      <workItem from="1715058181209" duration="1393000" />
+      <workItem from="1715329805709" duration="1252000" />
+      <workItem from="1715332820574" duration="689000" />
+      <workItem from="1715335626468" duration="17000" />
+      <workItem from="1715531948731" duration="715000" />
+      <workItem from="1715535931452" duration="692000" />
+      <workItem from="1715600797220" duration="532000" />
+    </task>
+    <task id="LOCAL-00001" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713376687673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713376687673</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713437818116</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713437818116</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713467891215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713467891215</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713514534046</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713514534046</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713515898527</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713515898527</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713525594775</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713525594775</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713533771688</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713533771688</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713533797496</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713533797496</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713610822822</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713610822822</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713610829808</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713610829808</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713611167793</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713611167793</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713613444592</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713613444592</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713697510744</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713697510744</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713790988422</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713790988422</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713792042125</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713792042125</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713854952512</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713854952512</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1713855721621</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713855721621</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714042702536</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714042702536</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714376799114</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714376799114</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714453906538</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714453906538</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714454288542</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1714454288542</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714455449978</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714455449978</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714642252893</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714642252893</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Amin">
+      <option name="closed" value="true" />
+      <created>1714652703500</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714652703501</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Amin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amin" />
+  </component>
+</project>
