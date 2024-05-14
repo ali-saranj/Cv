@@ -35,7 +35,7 @@ def content(request):
 def blog(request):
     weblog = Post.objects.all()
     new_posts = Post.objects.filter(is_featured=True)
-    context = {"blog": weblog, "new_posts": new_posts}
+    context = {"blogs": weblog, "newPosts": new_posts}
     return render(request, 'weblogPage.html', context)
 
 
@@ -117,14 +117,14 @@ def Contact_us_view(request):
 
 
 # get_blog
-class BlogView(TemplateView):
-    template_name = 'weblogPage.html'
-
-    def get_context_data(self):
-        context = super().get_context_data()
-        posts = Post.objects.all()
-        context['posts'] = posts
-        return context
+# class BlogView(TemplateView):
+#     template_name = 'weblogPage.html'
+#
+#     def get_context_data(self):
+#         context = super().get_context_data()
+#         posts = Post.objects.all()
+#         context['posts'] = posts
+#         return context
 
 # class Create_weblog(CreateView):
 #     model = Post
