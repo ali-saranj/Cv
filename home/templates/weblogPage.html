@@ -28,7 +28,7 @@
                                         <a href="{% url 'blog_details' post.id %}"
                                            title="{{ post.title }}">{{ post.title }}</a>
                                     </h2>
-                                    <p class="mb-4">{{ post.content|linebreaksbr|truncatechars:100 }}</p>
+                                    <p class="mb-4">{{ post.content|linebreaksbr|truncatechars:100}}</p>
                                     <a href="{% url 'blog_details' post.id %}" class="cs_btn cs_style_1 p-2">بیشتر
                                         بخوانید...</a>
                                 </div>
@@ -61,19 +61,27 @@
                                 </div>
                             {% endfor %}
 
-                            {#                                <div class="m-3 my-4">#}
-                            {#                                    <h6>مقاله تستسی 2 </h6>#}
-                            {#                                    <p class="cs_fs_16">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با#}
-                            {#                                        استفاده از طراحان گرافیک است، چاپگر…</p>#}
-                            {#                                </div>#}
+                            {#
+                        <div class="m-3 my-4">#}
+                            {# <h6>مقاله تستسی 2 </h6>#}
+                            {# <p class="cs_fs_16">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با#}
+                            {# استفاده از طراحان گرافیک است، چاپگر…</p>#}
+                            {#
+                        </div>
+                        #}
                         </div>
 
-                        {#                    <hr>#}
+                        {#
+                    <hr>
+                    #}
 
-                        {#                    <div class="sidebar-widget tags my-5">#}
-                        {#                        <h5 class="mb-4">برچسب ها</h5>#}
+                        {#
+                    <div class="sidebar-widget tags my-5">#}
+                        {# <h5 class="mb-4">برچسب ها</h5>#}
                         {#                        <!-- اینجا بقیه کد‌ها قرار می‌گیرد -->#}
-                        {#                    </div>#}
+                        {#
+                    </div>
+                    #}
                     </div>
                 </div>
 

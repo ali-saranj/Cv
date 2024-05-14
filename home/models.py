@@ -1,6 +1,6 @@
 from django.db import models
 from django.urls import reverse
-from jalali_date import date2jalali, date2jalali
+# from jalali_date import date2jalali, datetime2jalali
 
 
 # Create your models here.
