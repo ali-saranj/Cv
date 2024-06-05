@@ -3,9 +3,12 @@
 {% block title %}بلاگ{% endblock %}
 {% block content %}
 
-    <meta name="keywords" content="کلمه کلیدی ۱, کلمه کلیدی ۲, ...">
+    <meta name="keywords" content="{{ blogs.0.title }} , {{ blogs.0.content }}">
+    <meta name="description" content="{{ blogs.0.content|truncatechars:160 }}">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="http://127.0.0.1:8000/blog">
+    <link rel="canonical" href="https://codeplusunity.ir/blog/{{ blogs.0.id }}">
+
+    {% block keywords %}{{ blogs.0.title }} {% endblock %}
 
 
     <section class="section">
@@ -16,8 +19,9 @@
                         <div class="cs_height_200 cs_height_lg_60"></div>
                         {% for blog in blogs %}
                             <div class="col-lg-12 col-md-12 mb-5">
-                                <div class="rounded-2"><img src="{{ blog.image.url }}" alt=""
-                                                            class="img-fluid rounded-2"></div>
+                                <div class="rounded-2">
+                                    <img src="{{ blog.image.url }}" alt="{{ blog.title }}" class="img-fluid rounded-2">
+                                </div>
                                 <div class="blog-item-content">
                                     <div class="blog-item-meta mb-3 mt-4 ">
                                         <span class="mr-3 text-white">نویسنده : {{ blog.author }}</span>
@@ -35,7 +39,6 @@
                         {% endfor %}
                     </div>
                 </div>
-
 
                 <div class="col-lg-4 d-lg-inline-block d-none">
                     <div class="cs_height_80"></div>
@@ -56,31 +59,9 @@
                                         <a href="{% url 'blog_details' new_post.id %}">{{ new_post.title }}</a>
                                     </h6>
                                     <hr>
-
                                 </div>
                             {% endfor %}
-
-                            {#
-                        <div class="m-3 my-4">#}
-                            {# <h6>مقاله تستسی 2 </h6>#}
-                            {# <p class="cs_fs_16">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با#}
-                            {# استفاده از طراحان گرافیک است، چاپگر…</p>#}
-                            {#
                         </div>
-                        #}
-                        </div>
-
-                        {#
-                    <hr>
-                    #}
-
-                        {#
-                    <div class="sidebar-widget tags my-5">#}
-                        {# <h5 class="mb-4">برچسب ها</h5>#}
-                        {#                        <!-- اینجا بقیه کد‌ها قرار می‌گیرد -->#}
-                        {#
-                    </div>
-                    #}
                     </div>
                 </div>
 
