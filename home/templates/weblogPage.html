@@ -3,13 +3,14 @@
 {% block title %}بلاگ{% endblock %}
 {% block content %}
 
-    <meta name="keywords" content="{{ blogs.0.title }} , {{ blogs.0.content }}">
+    
     <meta name="description" content="{{ blogs.0.content|truncatechars:160 }}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://codeplusunity.ir/blog/{{ blogs.0.id }}">
 
+    {#    new_seo#}
     {% block keywords %}{{ blogs.0.title }} {% endblock %}
-
+    <meta name="keywords" content="{{ blogs.0.title }} , {{ blogs.0.content }}">
 
     <section class="section">
         <div class="container mb-5">
