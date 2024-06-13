@@ -3,7 +3,7 @@
 {% block title %}بلاگ{% endblock %}
 {% block content %}
 
-    
+
     <meta name="description" content="{{ blogs.0.content|truncatechars:160 }}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://codeplusunity.ir/blog/{{ blogs.0.id }}">
@@ -46,8 +46,9 @@
                     <div class="sidebar-wrap pl-lg-4 mt-lg-0">
                         <div class="sidebar-widget search mt-5 mb-5">
                             <h5>جستجو کنید!</h5>
-                            <form action="#" class="search-form">
-                                <input type="text" class="form-control" placeholder="جستجو ...">
+                            <form action="" method="GET">
+                                {{ search }}
+                                <button type="submit">search</button>
                             </form>
                         </div>
 

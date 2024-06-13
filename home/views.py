@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import CreateView
 from django.views.generic import TemplateView
+from .forms import Search_weblog
 
 from .models import Plan, Project, Post, Contact, Coment_Posts, Contact_us
 
@@ -33,9 +34,17 @@ def content(request):
 
 
 def blog(request):
+    search = Search_weblog(request.GET)
+    if search.is_valid():
+        searchText = search.cleaned_data['search_view']
+        data_list = Post.objects.filter(title__contains=searchText)
+    else:
+        weblog = Post.objects.all()
+
     weblog = Post.objects.all()
+
     new_posts = Post.objects.filter(is_featured=True)
-    context = {"blogs": weblog, "newPosts": new_posts}
+    context = {"blogs": weblog, "newPosts": new_posts, "search": search}
     return render(request, 'weblogPage.html', context)
 
 
@@ -114,7 +123,6 @@ def Contact_us_view(request):
             'response': "اطلاعات ذخیره شد"
         }
     return render(request, 'contact_us.html')
-
 
 # get_blog
 # class BlogView(TemplateView):
