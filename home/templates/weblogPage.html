@@ -46,11 +46,16 @@
                     <div class="sidebar-wrap pl-lg-4 mt-lg-0">
                         <div class="sidebar-widget search mt-5 mb-5">
                             <h5>جستجو کنید!</h5>
-                            <form action="" method="GET">
-                                {{ search }}
-                                <button type="submit">search</button>
+                            <form action="" method="GET" class="search-form">
+                                <div class="input-group">
+                                    {{ search }}
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="submit">search</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
+
 
                         <hr>
                         <div class="sidebar-widget latest-post my-5">

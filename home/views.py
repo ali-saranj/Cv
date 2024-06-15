@@ -35,13 +35,11 @@ def content(request):
 
 def blog(request):
     search = Search_weblog(request.GET)
-    if search.is_valid():
+    if search.is_valid() and search.cleaned_data['search_view']:
         searchText = search.cleaned_data['search_view']
-        data_list = Post.objects.filter(title__contains=searchText)
+        weblog = Post.objects.filter(title__contains=searchText)
     else:
         weblog = Post.objects.all()
-
-    weblog = Post.objects.all()
 
     new_posts = Post.objects.filter(is_featured=True)
     context = {"blogs": weblog, "newPosts": new_posts, "search": search}
