@@ -23,7 +23,7 @@ admin.site.register(Grouping)
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['pk', 'title', 'author', 'is_featured', 'Grouping']
+    list_display = ['pk', 'title']
 
 
 @admin.register(Contact)

@@ -5,8 +5,6 @@ from django.urls import reverse
 
 # Create your models here.
 
-# Create your models here.
-
 # user
 class Author(models.Model):
     name = models.CharField(max_length=100)
@@ -63,7 +61,7 @@ class Post(models.Model):
     pub_date = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(Author, on_delete=models.PROTECT)
     is_featured = models.BooleanField(default=False)
-    Grouping = models.ForeignKey(Grouping, on_delete=models.PROTECT, null=True)
+    grouping = models.ForeignKey(Grouping, on_delete=models.PROTECT, null=True)
 
     class Meta:
         permissions = [
