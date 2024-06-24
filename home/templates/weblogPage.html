@@ -7,7 +7,6 @@
     <meta name="description" content="{{ blogs.0.content|truncatechars:160 }}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://codeplusunity.ir/blog/{{ blogs.0.id }}">
-
     {#    new_seo#}
     {% block keywords %}{{ blogs.0.title }} {% endblock %}
     <meta name="keywords" content="{{ blogs.0.title }} , {{ blogs.0.content }}">
@@ -32,7 +31,7 @@
                                         <a href="{% url 'blog_details' blog.id %}"
                                            title="{{ blog.title }}">{{ blog.title }}</a>
                                     </h2>
-                                    <p class="mb-4">{{ blog.content|linebreaksbr|truncatechars:100}}</p>
+                                    <p class="mb-4">{{ blog.content|escape|truncatechars:100}}</p>
                                     <a href="{% url 'blog_details' blog.id %}" class="cs_btn cs_style_1 p-2">بیشتر
                                         بخوانید...</a>
                                 </div>
