@@ -44,33 +44,42 @@
                     <div class="cs_height_80"></div>
                     <div class="sidebar-wrap pl-lg-4 mt-lg-0">
                         <div class="sidebar-widget search mt-5 mb-5">
-                            <h5>جستجو کنید!</h5>
-                            <form action="" method="GET" class="search-form">
-                                <div class="input-group">
-                                    {{ search }}
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary" type="submit">search</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
 
-                        <hr>
-                        <div class="sidebar-widget latest-post my-5">
-                            <h5 style="color: #fd7e14">پربازدید</h5>
-                            {% for new_post in newPosts %}
-                                <div class="m-3 my-4">
-                                    <h6>
-                                        <a href="{% url 'blog_details' new_post.id %}">{{ new_post.title }}</a>
-                                    </h6>
-                                    <hr>
-                                </div>
-                            {% endfor %}
+                            {#   #show_massage#}
+                            <div class="row mt-3">
+                                {% if message %}
+                                    <div class="alert alert-warning" role="alert">
+                                        <h3>{{ message }}</h3>
+                                    </div>
+                                {% endif %}
+                            
+                                <h5>جستجو کنید!</h5>
+                                <form action="" method="GET" class="search-form">
+                                    <div class="input-group">
+                                        {{ search }}
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <hr>
+                            <div class="sidebar-widget latest-post my-5">
+                                <h5 style="color: #fd7e14">پربازدید</h5>
+                                {% for new_post in newPosts %}
+                                    <div class="m-3 my-4">
+                                        <h6>
+                                            <a href="{% url 'blog_details' new_post.id %}">{{ new_post.title }}</a>
+                                        </h6>
+                                        <hr>
+                                    </div>
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
     </section>
 {% endblock %}

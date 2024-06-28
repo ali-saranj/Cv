@@ -33,14 +33,25 @@ def content(request):
 
 def blog(request):
     search = Search_weblog(request.GET)
-    if search.is_valid() and search.cleaned_data['search_view']:
+    massage = ""
+
+    if search.is_valid() and search.cleaned_data.get('search_view'):
         searchText = search.cleaned_data['search_view']
         weblog = Post.objects.filter(title__contains=searchText)
+
+        if not weblog.exists():
+            massage = "مقاله مورد نظر پیدا نشد !"
+
     else:
         weblog = Post.objects.all()
 
     new_posts = Post.objects.filter(is_featured=True)
-    context = {"blogs": weblog, "newPosts": new_posts, "search": search}
+    context = {
+        "blogs": weblog,
+        "newPosts": new_posts,
+        "search": search,
+        "massage": massage
+    }
     return render(request, 'weblogPage.html', context)
 
 
