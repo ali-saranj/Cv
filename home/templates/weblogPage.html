@@ -11,6 +11,7 @@
     {% block keywords %}{{ blogs.0.title }} {% endblock %}
     <meta name="keywords" content="{{ blogs.0.title }} , {{ blogs.0.content }}">
 
+
     <section class="section">
         <div class="container mb-5">
             <div class="row">
@@ -44,25 +45,24 @@
                     <div class="cs_height_80"></div>
                     <div class="sidebar-wrap pl-lg-4 mt-lg-0">
                         <div class="sidebar-widget search mt-5 mb-5">
+                            <h5>جستجو کنید!</h5>
+                            <form action="" method="GET" class="search-form">
+                                <div class="input-group">
+                                    {{ search }}
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="submit">search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
 
-                            {#   #show_massage#}
-                            <div class="row mt-3">
-                                {% if message %}
-                                    <div class="alert alert-warning" role="alert">
-                                        <h3>{{ message }}</h3>
-                                    </div>
-                                {% endif %}
-                            
-                                <h5>جستجو کنید!</h5>
-                                <form action="" method="GET" class="search-form">
-                                    <div class="input-group">
-                                        {{ search }}
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="submit">search</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                        {#   #show_massage#}
+                        <div class="row mt-3">
+                            {% if massage %}
+                                <div class="alert alert-warning" role="alert">
+                                    <h3>{{ massage }}</h3>
+                                </div>
+                            {% endif %}
 
                             <hr>
                             <div class="sidebar-widget latest-post my-5">
