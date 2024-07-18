@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  },
+   "scripts": {
+    "build": "npx tailwindcss -i ./home/Tempelate/Src/input.css -o ./home/Tempelate/Src/output.css --watch"
+  }
+}

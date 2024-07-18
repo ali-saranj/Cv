@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home/Tempelate/Src/output.css">
+    <link rel="icon" href="../Pic/Logo/CP.svg" type="Image/svg">
+    <title>CodePlus</title>
+</head>
+<body class="font-IRSans-Medium bg-zinc-100">
+    <svg class="hidden">
+        <symbol
+        id="x-mark"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+      </symbol>
+    </svg>
+
+    <header class="hidden lg:flex right-0 left-0 top-3 mx-auto justify-around items-center w-[90%] h-24">
+        <div class="flex w-full justify-between items-center z-50">
+            <nav class="flex gap-x-48">
+                <div>
+                    <img src="../Pic/Logo/logocodeplus.svg" alt="logo" class="h-[49px] w-[230px]">
+                </div>
+
+                <ul class="flex font-IRSans-Bold gap-x-10 items-center">
+                    <li class="text-BlueC-800"><a href="#">صفحه اصلی</a></li>
+                    <li><a href="#">نمونه کار</a></li>
+                    <li><a href="#">مقالات</a></li>
+                    <li><a href="#">تماس باما</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <button class="bg-white text-gray-900 w-36 h-9 font-IRSans-Medium text-sm rounded-xl">
+                <a href="#" >مشاوره رایگان</a>
+            </button>
+            <img src="../Pic/header.png" class="absolute left-0 top-0 -z-10 lg:w-[650px] lg:h-[600px] md:w-[150px] md:h-[100px]" alt="">
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="flex lg:hidden justify-between items-center bg-white p-3 my-3">
+        <!-- menu -->
+        <div class="nav-icon cursor-pointer">
+            <img src="../Pic/menu.png" alt="">
+        </div>
+
+        <!-- NavBar -->
+        <div class="menuNav flex flex-col fixed w-64 -right-64 top-0 bottom-0 px-6 transition-all bg-white z-20 overflow-y-auto">
+            <!-- close -->
+            <div class="flex justify-end py-4">
+              <svg class="close-nav w-6 h-6 cursor-pointer">
+                <use href="#x-mark"></use>
+              </svg>
+            </div>
+
+            <!-- nav -->
+            <ul class="flex flex-col gap-y-3">
+              <li>
+                <a href="#">صفحه اصلی</a>
+              </li>
+              <li>
+                <a href="#">نمونه کار</a>
+              </li>
+              <li>
+                <a href="#">مقالات</a>
+              </li>
+              <li>
+                <a href="#">تماس با ما</a>
+              </li>
+            </ul>
+
+        </div>
+
+
+        <!-- mobile logo -->
+        <div>
+            <img src="../Pic/Logo/logocodeplus.svg" alt="CodePlus" class="w-[115px] h-[24px]">
+        </div>
+
+        <!-- Call -->
+        <div>
+            <img src="../Pic/calling.png" alt="">
+        </div>
+
+        <img src="../Pic/header.png" class="absolute left-0 top-0 -z-10 " alt="">
+    </div>
+
+    <main>
+        <!-- Header Home -->
+        <section class="container relative mt-[520px] lg:mt-0">
+            <div class="overflow-y-hidden md:min-h-screen lg:w-[50%] flex justify-end items-center">
+                <div class="flex flex-col gap-y-8">
+                    <div class="font-Rokh-Med text-2xl md:text-3xl">پروژه خودتو با خیال راحت </br>به <span class="bg-BlueC-800 text-white rounded-3xl px-2">کد پلاس</span> بسپار</div>
+                    <p class="font-IRSans-Light text-xs leading-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                    <div class="flex items-center">
+                        <div class="flex gap-x-3 items-center">
+                            <span><a href="#" class="bg-BlueC-800 text-xs rounded-xl px-6 md:px-8 py-1 md:py-2">ثبت سفارش</a></span>
+                            <span><a href="#" class="font-IRSans-Light text-xs">نمونه کارهای ما</a></span>
+                        </div>
+                        <span class="w-9 mx-1"><img src="../Pic/Union.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="mt-16 md:mt-2 lg:mt-0">
+            <div class="container">
+                <!-- title -->
+                <div class="">
+                    <h3 class="font-Rokh-Bold text-2xl md:text-3xl mb-4">خدمات <span class="font-Rokh-Med">ما</span></h3>
+                    <span class="font-IRSans-Light text-xs md:text-base">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</span>
+                </div>
+                <!-- product -->
+                <div class="grid grid-cols-2 lg:grid-cols-3 my-9 gap-5 md:gap-10 justify-center items-center">
+                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                        <!-- head -->
+                        <div class="flex gap-2 items-center justify-center my-4">
+                            <img src="../Pic/11.png" class="md:w-14 w-10 h-10 md:h-14" alt="">
+                            <h4 class="md:text-sm text-xs">طراحی سایت آماده پایه</h4>
+                        </div>
+                        <hr class="mx-7">
+                        <!-- main -->
+                        <ul class="flex flex-col gap-1 my-6  md:text-sm text-xs font-IRSans-Light text-grayPro-800">
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/close.png" class="w-3 h-3" alt="">
+                                <a href="#">سبد خرید</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">کد نویسی اختصاصی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">سیستم مدیریت محتوای وب وان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">امکان سفارشی سازی و ارتقا</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مدیریت آسان محتوا بدون دانش فنی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مناسب برای تمام مشاغل</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">هاست رایگان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">صفحات،محصولات وایمیل نامحدود</a>
+                            </li>
+                        </ul>
+
+                        <!-- end -->
+                        <div class="flex flex-col justify-center items-center">
+                            <span class="text-greenPrice-800 font-IRSans-Bold md:text-base text-sm">۲٬۹۸۰٬۰۰۰ تومان</span>
+                            <a href="#" class="bg-BlueC-800 rounded-xl px-6 md:px-8 py-1 md:py-2 my-3 text-xs">ثبت سفارش</a>
+                        </div>
+                    </div>
+
+                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                        <!-- head -->
+                        <div class="flex gap-2 items-center justify-center my-4">
+                            <img src="../Pic/11.png" class="md:w-14 w-10 h-10 md:h-14" alt="">
+                            <h4 class="md:text-sm text-xs">طراحی سایت آماده پایه</h4>
+                        </div>
+                        <hr class="mx-7">
+                        <!-- main -->
+                        <ul class="flex flex-col gap-1 my-6  md:text-sm text-xs font-IRSans-Light text-grayPro-800">
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/close.png" class="w-3 h-3" alt="">
+                                <a href="#">سبد خرید</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">کد نویسی اختصاصی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">سیستم مدیریت محتوای وب وان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">امکان سفارشی سازی و ارتقا</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مدیریت آسان محتوا بدون دانش فنی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مناسب برای تمام مشاغل</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">هاست رایگان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">صفحات،محصولات وایمیل نامحدود</a>
+                            </li>
+                        </ul>
+
+                        <!-- end -->
+                        <div class="flex flex-col justify-center items-center">
+                            <span class="text-greenPrice-800 font-IRSans-Bold md:text-base text-sm">۲٬۹۸۰٬۰۰۰ تومان</span>
+                            <a href="#" class="bg-BlueC-800 rounded-xl px-6 md:px-8 py-1 md:py-2 my-3 text-xs">ثبت سفارش</a>
+                        </div>
+                    </div>
+
+                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                        <!-- head -->
+                        <div class="flex gap-2 items-center justify-center my-4">
+                            <img src="../Pic/11.png" class="md:w-14 w-10 h-10 md:h-14" alt="">
+                            <h4 class="md:text-sm text-xs">طراحی سایت آماده پایه</h4>
+                        </div>
+                        <hr class="mx-7">
+                        <!-- main -->
+                        <ul class="flex flex-col gap-1 my-6  md:text-sm text-xs font-IRSans-Light text-grayPro-800">
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/close.png" class="w-3 h-3" alt="">
+                                <a href="#">سبد خرید</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">کد نویسی اختصاصی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">سیستم مدیریت محتوای وب وان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">امکان سفارشی سازی و ارتقا</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مدیریت آسان محتوا بدون دانش فنی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مناسب برای تمام مشاغل</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">هاست رایگان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">صفحات،محصولات وایمیل نامحدود</a>
+                            </li>
+                        </ul>
+
+                        <!-- end -->
+                        <div class="flex flex-col justify-center items-center">
+                            <span class="text-greenPrice-800 font-IRSans-Bold md:text-base text-sm">۲٬۹۸۰٬۰۰۰ تومان</span>
+                            <a href="#" class="bg-BlueC-800 rounded-xl px-6 md:px-8 py-1 md:py-2 my-3 text-xs">ثبت سفارش</a>
+                        </div>
+                    </div>
+
+                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                        <!-- head -->
+                        <div class="flex gap-2 items-center justify-center my-4">
+                            <img src="../Pic/11.png" class="md:w-14 w-10 h-10 md:h-14" alt="">
+                            <h4 class="md:text-sm text-xs">طراحی سایت آماده پایه</h4>
+                        </div>
+                        <hr class="mx-7">
+                        <!-- main -->
+                        <ul class="flex flex-col gap-1 my-6  md:text-sm text-xs font-IRSans-Light text-grayPro-800">
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/close.png" class="w-3 h-3" alt="">
+                                <a href="#">سبد خرید</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">کد نویسی اختصاصی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">سیستم مدیریت محتوای وب وان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">امکان سفارشی سازی و ارتقا</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مدیریت آسان محتوا بدون دانش فنی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مناسب برای تمام مشاغل</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">هاست رایگان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">صفحات،محصولات وایمیل نامحدود</a>
+                            </li>
+                        </ul>
+
+                        <!-- end -->
+                        <div class="flex flex-col justify-center items-center">
+                            <span class="text-greenPrice-800 font-IRSans-Bold md:text-base text-sm">۲٬۹۸۰٬۰۰۰ تومان</span>
+                            <a href="#" class="bg-BlueC-800 rounded-xl px-6 md:px-8 py-1 md:py-2 my-3 text-xs">ثبت سفارش</a>
+                        </div>
+                    </div>
+
+                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                        <!-- head -->
+                        <div class="flex gap-2 items-center justify-center my-4">
+                            <img src="../Pic/11.png" class="md:w-14 w-10 h-10 md:h-14" alt="">
+                            <h4 class="md:text-sm text-xs">طراحی سایت آماده پایه</h4>
+                        </div>
+                        <hr class="mx-7">
+                        <!-- main -->
+                        <ul class="flex flex-col gap-1 my-6  md:text-sm text-xs font-IRSans-Light text-grayPro-800">
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/close.png" class="w-3 h-3" alt="">
+                                <a href="#">سبد خرید</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">کد نویسی اختصاصی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">سیستم مدیریت محتوای وب وان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">امکان سفارشی سازی و ارتقا</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مدیریت آسان محتوا بدون دانش فنی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مناسب برای تمام مشاغل</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">هاست رایگان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">صفحات،محصولات وایمیل نامحدود</a>
+                            </li>
+                        </ul>
+
+                        <!-- end -->
+                        <div class="flex flex-col justify-center items-center">
+                            <span class="text-greenPrice-800 font-IRSans-Bold md:text-base text-sm">۲٬۹۸۰٬۰۰۰ تومان</span>
+                            <a href="#" class="bg-BlueC-800 rounded-xl px-6 md:px-8 py-1 md:py-2 my-3 text-xs">ثبت سفارش</a>
+                        </div>
+                    </div>
+
+                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                        <!-- head -->
+                        <div class="flex gap-2 items-center justify-center my-4">
+                            <img src="../Pic/11.png" class="md:w-14 w-10 h-10 md:h-14" alt="">
+                            <h4 class="md:text-sm text-xs">طراحی سایت آماده پایه</h4>
+                        </div>
+                        <hr class="mx-7">
+                        <!-- main -->
+                        <ul class="flex flex-col gap-1 my-6  md:text-sm text-xs font-IRSans-Light text-grayPro-800">
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/close.png" class="w-3 h-3" alt="">
+                                <a href="#">سبد خرید</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">کد نویسی اختصاصی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">سیستم مدیریت محتوای وب وان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">امکان سفارشی سازی و ارتقا</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مدیریت آسان محتوا بدون دانش فنی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">مناسب برای تمام مشاغل</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">هاست رایگان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="../Pic/tik.png" class="w-3 h-3" alt="">
+                                <a href="#">صفحات،محصولات وایمیل نامحدود</a>
+                            </li>
+                        </ul>
+
+                        <!-- end -->
+                        <div class="flex flex-col justify-center items-center">
+                            <span class="text-greenPrice-800 font-IRSans-Bold md:text-base text-sm">۲٬۹۸۰٬۰۰۰ تومان</span>
+                            <a href="#" class="bg-BlueC-800 rounded-xl px-6 md:px-8 py-1 md:py-2 my-3 text-xs">ثبت سفارش</a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- why us -->
+        <section class="mt-16 md:mt-24">
+            <div class="flex md:flex-row flex-col right-0 left-0 justify-center items-end md:items-center">
+                <div class="container">
+                    <!-- title -->
+                    <div>
+                        <span class="font-Rokh-Med md:text-3xl text-2xl">چرا <h3 class="font-Rokh-Bold mb-4 inline">کدپلاس؟</h3></span>
+                        <p class="font-IRSans-Light md:my-9 my-4 md:text-base text-xs"> لورم ایپسوم یک سرویس کاملا رایگان و ساده برای ارائه متن لورم ایپسوم است که به زبان های مختلف متن لورم ایپسوم را ارائه میدهد</p>
+                    </div>
+                    <!-- ----- -->
+                    <div class="grid grid-cols-2 md:gap-6 gap-3 justify-start items-center my-12">
+                        <div class="flex lg:gap-4 gap-2">
+                            <img src="../Pic/Mobile.png" class="lg:w-14 lg:h-14 w-10 h-10" alt="">
+                            <div>
+                                <h4 class="font-Rokh-Bold lg:text-base text-sm">پشتیبانی ۲۴ ساعته</h4>
+                                <p class="font-Rokh-Med lg:text-sm text-xs">پشتیبانی 7 روز هفته و روزهای تعطیل</p>
+                            </div>
+                        </div>
+
+                        <div class="flex lg:gap-4 gap-2">
+                            <img src="../Pic/Contact.png"" class="lg:w-14 lg:h-14 w-10 h-10" alt="">
+                            <div>
+                                <h4 class="font-Rokh-Bold lg:text-base text-sm">امکان بررسی نظرات کاربران</h4>
+                                <p class="font-Rokh-Med lg:text-sm text-xs">بررسی کیفیت هتل ها از دید کاربران</p>
+                            </div>
+                        </div>
+
+                        <div class="flex lg:gap-4 gap-2">
+                            <img src="../Pic/Mobile.png" class="lg:w-14 lg:h-14 w-10 h-10" alt="">
+                            <div>
+                                <h4 class="font-Rokh-Bold lg:text-base text-sm">پشتیبانی ۲۴ ساعته</h4>
+                                <p class="font-Rokh-Med lg:text-sm text-xs">پشتیبانی 7 روز هفته و روزهای تعطیل</p>
+                            </div>
+                        </div>
+
+                        <div class="flex lg:gap-4 gap-2">
+                            <img src="../Pic/Contact.png"" class="lg:w-14 lg:h-14 w-10 h-10" alt="">
+                            <div>
+                                <h4 class="font-Rokh-Bold lg:text-base text-sm">امکان بررسی نظرات کاربران</h4>
+                                <p class="font-Rokh-Med lg:text-sm text-xs">بررسی کیفیت هتل ها از دید کاربران</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- image -->
+                <div class="-left-60 lg:w-[600px] w-[70%] h-[70%] md:mt-0 ">
+                    <img src="../Pic/whayUs.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="mt-16 md:mt-24">
+            <div class="container">
+                <!-- title -->
+                <div class="flex justify-between items-end my-9">
+                    <div>
+                        <h3 class="font-Rokh-Bold md:text-3xl text-2xl mb-4">مقالات</span></h3>
+                        <span class="font-IRSans-Light lg:text-base text-xs">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</span>
+                    </div>
+                    <div class="hidden lg:flex justify-center items-center gap-x-1">
+                        <span class="font-IRSans-Light text-[12px]"><a href="#">همه مقالات</a></span>
+                        <span class="w-9 mx-1"><img src="../Pic/Union.png" alt=""></span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                    <div class="flex lg:gap-5 gap-3 bg-white p-3 rounded-lg items-center">
+                        <img src="../Pic/blogs.jpg" alt="" class="rounded-lg lg:w-32 w-[80px] h-[80px] lg:h-36">
+                        <div>
+                            <div class="">
+                                <h5 class="font-IRSans-Medium lg:text-base text-xs">وایرفریم (Wireframe) چیست؟ همه چیز در مورد وایرفریم ها.</h5>
+                                <div class="flex gap-1 mt-1 mb-3">
+                                    <img src="../Pic/calendar.png" alt="">
+                                    <p class="font-IRSans-Light text-zinc-400 lg:text-sm text-xs">۱۵ خرداد 1402</p>
+                                </div>
+                                <p class="font-IRSans-Light lg:text-xs text-[9px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود اد...</p>
+                                <div class="flex justify-end">
+                                    <img src="../Pic/import.png" alt="" class="lg:w-4 w-3 h-3 lg:h-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex lg:gap-5 gap-3 bg-white p-3 rounded-lg items-center">
+                        <img src="../Pic/blogs.jpg" alt="" class="rounded-lg lg:w-32 w-[80px] h-[80px] lg:h-36">
+                        <div>
+                            <div class="">
+                                <h5 class="font-IRSans-Medium lg:text-base text-xs">وایرفریم (Wireframe) چیست؟ همه چیز در مورد وایرفریم ها.</h5>
+                                <div class="flex gap-1 mt-1 mb-3">
+                                    <img src="../Pic/calendar.png" alt="">
+                                    <p class="font-IRSans-Light text-zinc-400 lg:text-sm text-xs">۱۵ خرداد 1402</p>
+                                </div>
+                                <p class="font-IRSans-Light lg:text-xs text-[9px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود اد...</p>
+                                <div class="flex justify-end">
+                                    <img src="../Pic/import.png" alt="" class="lg:w-4 w-3 h-3 lg:h-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex lg:gap-5 gap-3 bg-white p-3 rounded-lg items-center">
+                        <img src="../Pic/blogs.jpg" alt="" class="rounded-lg lg:w-32 w-[80px] h-[80px] lg:h-36">
+                        <div>
+                            <div class="">
+                                <h5 class="font-IRSans-Medium lg:text-base text-xs">وایرفریم (Wireframe) چیست؟ همه چیز در مورد وایرفریم ها.</h5>
+                                <div class="flex gap-1 mt-1 mb-3">
+                                    <img src="../Pic/calendar.png" alt="">
+                                    <p class="font-IRSans-Light text-zinc-400 lg:text-sm text-xs">۱۵ خرداد 1402</p>
+                                </div>
+                                <p class="font-IRSans-Light lg:text-xs text-[9px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود اد...</p>
+                                <div class="flex justify-end">
+                                    <img src="../Pic/import.png" alt="" class="lg:w-4 w-3 h-3 lg:h-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex lg:gap-5 gap-3 bg-white p-3 rounded-lg items-center">
+                        <img src="../Pic/blogs.jpg" alt="" class="rounded-lg lg:w-32 w-[80px] h-[80px] lg:h-36">
+                        <div>
+                            <div class="">
+                                <h5 class="font-IRSans-Medium lg:text-base text-xs">وایرفریم (Wireframe) چیست؟ همه چیز در مورد وایرفریم ها.</h5>
+                                <div class="flex gap-1 mt-1 mb-3">
+                                    <img src="../Pic/calendar.png" alt="">
+                                    <p class="font-IRSans-Light text-zinc-400 lg:text-sm text-xs">۱۵ خرداد 1402</p>
+                                </div>
+                                <p class="font-IRSans-Light lg:text-xs text-[9px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود اد...</p>
+                                <div class="flex justify-end">
+                                    <img src="../Pic/import.png" alt="" class="lg:w-4 w-3 h-3 lg:h-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex lg:hidden justify-center items-center gap-x-1 my-8">
+                    <span class="font-IRSans-Light"><a href="#">همه مقالات</a></span>
+                    <span class="w-9 mx-1"><img src="../Pic/Union.png" alt=""></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Question -->
+        <section class="mt-24">
+            <div class="container">
+                <div class="my-9 lg:text-3xl text-2xl">
+                   <span class="font-Rokh-Med ">سوالات متداول</span>
+                   <h3 class="font-Rokh-Bold inline">کدپلاس</h3>
+                </div>
+
+                <div class="grid grid-cols-1 justify-start lg:items-start items-center gap-4">
+                    <div class="flex gap-2 bg-BlueC-100/30 lg:p-5 p-7 rounded-md">
+                        <img src="../Pic/plus.png" alt="" class="lg:w-6 lg:h-6 w-4 h-4">
+                        <span class="lg:text-base text-xs">مدت زمان ساخت سایت با قالب آماده های کد پلاس ؟</span>
+                    </div>
+
+                    <div class="flex gap-2 bg-BlueC-100/30 lg:p-5 p-7 rounded-md">
+                        <img src="../Pic/plus.png" alt="" class="lg:w-6 lg:h-6 w-4 h-4">
+                        <span class="lg:text-base text-xs">مدت زمان ساخت سایت با قالب آماده های کد پلاس ؟</span>
+                    </div>
+
+                    <div class="flex gap-2 bg-BlueC-100/30 lg:p-5 p-7 rounded-md">
+                        <img src="../Pic/plus.png" alt="" class="lg:w-6 lg:h-6 w-4 h-4">
+                        <span class="lg:text-base text-xs">مدت زمان ساخت سایت با قالب آماده های کد پلاس ؟</span>
+                    </div>
+
+                    <div class="flex gap-2 bg-BlueC-100/30 lg:p-5 p-7 rounded-md">
+                        <img src="../Pic/plus.png" alt="" class="lg:w-6 lg:h-6 w-4 h-4">
+                        <span class="lg:text-base text-xs">مدت زمان ساخت سایت با قالب آماده های کد پلاس ؟</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="mt-24 flex flex-col justify-center items-center w-full">
+
+         <!-- White Session -->
+        <div class="flex justify-between items-center lg:px-5 px-3 bg-white lg:w-[850px] w-[400px] h-20 rounded-xl -mb-10 z-20">
+            <div>
+                <p class="lg:text-lg text-xs">منتظر تماس گرم شما هستیم </p>
+                <span class="font-IRSans-Light lg:text-sm text-[10px]">پاسخگویی از ۷ صبح تا ۲۲ شب</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+                <p class="font-Rokh-Bold lg:text-2xl text-sm">۰۳۱۵۴۸۹۷۵</p>
+                <img src="../Pic/Mobile.png" alt="" class="lg:w-[53px] w-6 h-6 lg:h-[53px]">
+            </div>
+        </div>
+        
+        <!-- Main -->
+        <div class="bg-BlueC-100  h-auto w-full flex lg:flex-row flex-col lg:justify-around lg:items-start justify-center items-center rounded-3xl -mb-10 z-10">
+            <div class="mt-16 flex flex-col lg:items-start items-center">
+                <!-- Logo -->
+                <img src="../Pic/Logo/logocodeplus.svg" alt="logo" class="lg:h-[49px] h-10 w-40 lg:w-[230px]">
+                <p class="font-IRSans-Light text-xs w-96 text-justify leading-6 mt-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+            </div>
+            <!-- left Side -->
+            <div class="lg:mt-28 my-10 grid sm:grid-cols-3 grid-cols-2 lg:gap-28 gap-x-16 gap-y-7">
+                <!-- access -->
+                <div class="flex flex-col gap-y-4 mt-6">
+                    <h5>دسترسی سریع</h5>
+                    <div class="flex flex-col font-IRSans-Light mt-3 gap-y-4 text-xs">
+                        <a href="#">صفحه اصلی </a>
+                        <a href="#">نمونه کارها</a>
+                        <a href="#">مقالات</a>
+                        <a href="#">تماس باما</a>
+                        <a href="#">مشاوره رایگان</a>
+                    </div>
+                </div>
+
+                 <!-- access -->
+                <div class="flex flex-col gap-y-4 mt-6">
+                    <h5>دسترسی سریع</h5>
+                    <div class="flex flex-col font-IRSans-Light mt-3 gap-y-4 text-xs">
+                        <a href="#">صفحه اصلی </a>
+                        <a href="#">نمونه کارها</a>
+                        <a href="#">مقالات</a>
+                        <a href="#">تماس باما</a>
+                        <a href="#">مشاوره رایگان</a>
+                    </div>
+                </div>
+
+                 <div class="flex flex-col gap-y-4 mt-6">
+                    <h5>راه های ارتباطی</h5>
+                    <div class="flex flex-col font-IRSans-Light gap-y-4 text-xs mt-3">
+                        <a href="#" class="flex items-center gap-2 font-IRSans-Light text-xs">
+                            <img src="../Pic/call-calling.png" alt="" class="w-4 h-4">
+                            021-24086
+                        </a>
+                        <a href="#" class="flex items-center gap-2 font-IRSans-Light text-xs">
+                            <img src="../Pic/Telegram.png" alt="" class="w-4 h-4">
+                            09214525890
+                        </a>
+                        <a href="#" class="flex items-center gap-2 font-IRSans-Light text-xs">
+                            <img src="../Pic/whatsapp.png" alt="" class="w-4 h-4">
+                            09214525890
+                        </a>
+                        <a href="#" class="flex items-center gap-2 font-IRSans-Light text-xs">
+                            <img src="../Pic/sms.png" alt="" class="w-4 h-4">
+                            codeplus@gmail.com
+                        </a>
+                        <a href="#" class="flex items-center gap-2 font-IRSans-Light text-xs">
+                            <img src="../Pic/instagram.png" alt="" class="w-4 h-4">
+                            codeplus.unity
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-BlueC-800 h-20 z-0 flex lg:justify-start items-end justify-center">
+        <p class="font-IRSans-Light text-sm text-white pb-2 px-20">© تمام حقوق codeplus.com محفوظ است</p>
+    </div>
+
+    
+
+    <script src="../Script/home.js"></script>
+    
+</body>
+</html>
