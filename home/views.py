@@ -10,7 +10,8 @@ from .models import Plan, Project, Post, Contact, Coment_Posts, Contact_us
 # Create your views here.
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, "Public/index.html")
+
 
 
 def about(request):
