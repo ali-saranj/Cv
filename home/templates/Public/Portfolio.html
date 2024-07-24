@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Src/output.css">
-    <link rel="icon" href="../Pic/Logo/CP.svg" type="Image/svg">
+    {#    <link rel="stylesheet" href="../Src/output.css">#}
+    <link rel="stylesheet" href="{% static 'Src/output.css' %}">
+    <link rel="icon" href=" {% static 'Pic/Logo/CP.svg' %}  " type="Image/svg">
     <title>وبلاگ | کدپلاس</title>
 </head>
 <body class="font-IRSans-Medium bg-zinc-100">
@@ -23,21 +24,23 @@
     <header class="hidden lg:flex right-0 left-0 top-3 mx-auto justify-around items-center w-[90%] h-24">
         <div class="flex w-full justify-between items-center z-50">
             <nav class="flex gap-x-48">
-                <a href="../Public/index.html">
-                    <img src="../Pic/Logo/logocodeplus.svg" alt="logo" class="h-[49px] w-[230px]">
+                <a href="{% static 'Public/index.html' %}">
+                    {#                    <img src="../Pic/Logo/logocodeplus.svg" alt="logo" class="h-[49px] w-[230px]">#}
+                <img src="{% static 'Pic/Logo/logocodeplus.svg' %}" alt="logo" class="h-[49px] w-[230px]">
                 </a>
 
                 <ul class="flex font-IRSans-Bold gap-x-10 items-center">
                     <li class="text-BlueC-800"><a href="../Public/index.html">صفحه اصلی</a></li>
-                    <li><a href="../Public/Portfolio.html">نمونه کار</a></li>
-                    <li><a href="../Public/blogs.html">مقالات</a></li>
-                    <li><a href="../Public/contactUs.html">تماس باما</a></li>
+                    <li><a href="{% static '/Public/Portfolio.html' %}">نمونه کار</a></li>
+                    <li><a href="{% static '/Public/blogs.html' %}">مقالات</a></li>
+                    <li><a href="{% static '/Public/contactUs.html' %}">تماس باما</a></li>
                 </ul>
+               
             </nav>
         </div>
         <div>
             <button class="bg-BlueC-800 text-gray-900 w-36 h-9 font-IRSans-Medium text-sm rounded-xl">
-                <a href="../Public/blogPage.html" >مشاوره رایگان</a>
+                <a href="{% static '/Public/blogPage.html' %}" >مشاوره رایگان</a>
             </button>
         </div>
     </header>
@@ -46,7 +49,7 @@
     <div class="flex lg:hidden justify-between items-center bg-white p-3 my-3">
         <!-- menu -->
         <div class="nav-icon cursor-pointer">
-            <img src="../Pic/menu.png" alt="">
+            <img src="{% static '/Pic/menu.png' %}" alt="">
         </div>
 
         <!-- NavBar -->
@@ -60,22 +63,22 @@
 
             <!-- nav -->
             <ul class="flex flex-col gap-y-3">
-                <li class="text-BlueC-800"><a href="../Public/index.html">صفحه اصلی</a></li>
-                <li><a href="../Public/Portfolio.html">نمونه کار</a></li>
-                <li><a href="../Public/blogs.html">مقالات</a></li>
-                <li><a href="../Public/contactUs.html">تماس باما</a></li>
+                <li class="text-BlueC-800"><a href="{% static '/Public/index.html' %}">صفحه اصلی</a></li>
+                <li><a href="{% static '/Public/Portfolio.html' %}">نمونه کار</a></li>
+                <li><a href="{% static '/Public/blogs.html' %}">مقالات</a></li>
+                <li><a href="{% static '/Public/contactUs.html' %}">تماس باما</a></li>
             </ul>
         </div>
 
 
         <!-- mobile logo -->
-        <a href="../Public/index.html">
-            <img src="../Pic/Logo/logocodeplus.svg" alt="CodePlus" class="w-[115px] h-[24px]">
+        <a href="{% static '/Public/index.html' %}">
+            <img src="{% static '/Pic/Logo/logocodeplus.svg' %}" alt="CodePlus" class="w-[115px] h-[24px]">
         </a>
 
         <!-- Call -->
         <a href="#" class="cursor-pointer">
-            <img src="../Pic/calling.png" alt="">
+            <img src="{% static '/Pic/calling.png' %}" alt="">
         </a>
     </div>
 
@@ -95,7 +98,7 @@
                     <!-- right -->
                 <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-5 lg:w-[1240px] md:w-[600px] w-[360px]">
                     <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
                         <div>
                             <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                 <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
@@ -108,7 +111,35 @@
                     </div>
 
                     <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <div>
+                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
+                            </div>
+                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <div>
+                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
+                            </div>
+                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
                         <div>
                             <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                 <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
@@ -121,7 +152,7 @@
                     </div>
 
                     <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
                         <div>
                             <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                 <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
@@ -133,40 +164,87 @@
                         </div>
                     </div>
 
-                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                        <div>
-                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
-                            </div>
-                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                        <div>
-                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
-                            </div>
-                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
-                            </div>
-                        </div>
-                    </div>
-
+               </div>
                 </div>
+
+                <div class="Content animate-search">
+                    <!-- right -->
+                <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-5 lg:w-[1240px] md:w-[600px] w-[360px]">
+                    <div class="flex lg:flex-row flex-col gap-5 bg-blue-500 lg:p-3 p-2 rounded-lg items-center my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <div>
+                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
+                            </div>
+                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <div>
+                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
+                            </div>
+                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <div>
+                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
+                            </div>
+                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <div>
+                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
+                            </div>
+                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <div>
+                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
+                            </div>
+                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                    </div>
+
+               </div>
                 </div>
 
-                <div class="Content hidden animate-search">
+                <div class="Content animate-search">
                     <!-- right -->
                 <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-5 lg:w-[1240px] md:w-[600px] w-[360px]">
                     <div class="flex lg:flex-row flex-col gap-5 bg-red-400 lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
                         <div>
                             <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                 <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
@@ -179,7 +257,35 @@
                     </div>
 
                     <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <div>
+                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
+                            </div>
+                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <div>
+                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
+                            </div>
+                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
                         <div>
                             <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                 <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
@@ -192,7 +298,7 @@
                     </div>
 
                     <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <img src="{% static '/Pic/Pro.png' %}" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
                         <div>
                             <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                 <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
@@ -204,106 +310,9 @@
                         </div>
                     </div>
 
-                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                        <div>
-                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
-                            </div>
-                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                        <div>
-                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
-                            </div>
-                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
-                            </div>
-                        </div>
-                    </div>
-
+               </div>
                 </div>
-                </div>
 
-                <div class="Content hidden animate-search">
-                    <!-- right -->
-                <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-5 lg:w-[1240px] md:w-[600px] w-[360px]">
-                    <div class="flex lg:flex-row flex-col gap-5 bg-yellow-700 lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                        <div>
-                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
-                            </div>
-                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                        <div>
-                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
-                            </div>
-                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                        <div>
-                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
-                            </div>
-                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                        <div>
-                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
-                            </div>
-                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                        <img src="../Pic/Pro.png" alt="" class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                        <div>
-                            <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>  
-                            </div>
-                            <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">اطلاعات بیشتر</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                </div>
-                
             </div>
             
         </div>
@@ -321,7 +330,7 @@
            </div>
            <div class="flex items-center justify-center gap-2">
                <p class="font-Rokh-Bold lg:text-2xl text-sm">۰۳۱۵۴۸۹۷۵</p>
-               <img src="../Pic/Mobile.png" alt="" class="lg:w-[53px] w-6 h-6 lg:h-[53px]">
+               <img src="{% static '/Pic/Mobile.png' %}" alt="" class="lg:w-[53px] w-6 h-6 lg:h-[53px]">
            </div>
        </div>
        
@@ -329,7 +338,7 @@
        <div class="bg-BlueC-100  h-auto w-full flex lg:flex-row flex-col lg:justify-around lg:items-start justify-center items-center rounded-3xl -mb-10 z-10">
            <div class="mt-16 flex flex-col lg:items-start items-center">
                <!-- Logo -->
-               <img src="../Pic/Logo/logocodeplus.svg" alt="logo" class="lg:h-[49px] h-10 w-40 lg:w-[230px]">
+               <img src="{% static '/Pic/Logo/logocodeplus.svg %}" alt="logo" class="lg:h-[49px] h-10 w-40 lg:w-[230px]">
                <p class="font-IRSans-Light text-xs w-96 text-justify leading-6 mt-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
            </div>
            <!-- left Side -->
@@ -362,23 +371,24 @@
                    <h5>راه های ارتباطی</h5>
                    <div class="flex flex-col font-IRSans-Light gap-y-4 text-xs mt-3">
                        <a href="#" class="flex items-center gap-2 font-IRSans-Light text-xs">
-                           <img src="../Pic/call-calling.png" alt="" class="w-4 h-4">
+                           <img src="ass="flex items-center gap-2 font-IRSans-Light text-xs">
+                           <img src="{% static 'Pic/call-calling.png' %}" alt="" class="w-4 h-4">
                            021-24086
                        </a>
                        <a href="#" class="flex items-center gap-2 font-IRSans-Light text-xs">
-                           <img src="../Pic/Telegram.png" alt="" class="w-4 h-4">
+                           <img src="{% static '/Pic/Telegram.png' %}" alt="" class="w-4 h-4">
                            09214525890
                        </a>
                        <a href="#" class="flex items-center gap-2 font-IRSans-Light text-xs">
-                           <img src="../Pic/whatsapp.png" alt="" class="w-4 h-4">
+                           <img src="{% static '/Pic/whatsapp.png' %}" alt="" class="w-4 h-4">
                            09214525890
                        </a>
                        <a href="#" class="flex items-center gap-2 font-IRSans-Light text-xs">
-                           <img src="../Pic/sms.png" alt="" class="w-4 h-4">
+                           <img src="{% static 'Pic/sms.png' %}" alt="" class="w-4 h-4">
                            codeplus@gmail.com
                        </a>
                        <a href="#" class="flex items-center gap-2 font-IRSans-Light text-xs">
-                           <img src="../Pic/instagram.png" alt="" class="w-4 h-4">
+                           <img src="{% static 'Pic//instagram.png' %}" alt="" class="w-4 h-4">
                            codeplus.unity
                        </a>
                    </div>
@@ -391,7 +401,7 @@
        <p class="font-IRSans-Light text-sm text-white pb-2 px-20">© تمام حقوق codeplus.com محفوظ است</p>
     </div>
 
-    <script src="../Script/home.js"></script>
+    <script src="{% static 'Script/home.js' %}"></script>
    
 </body>
 </html>
