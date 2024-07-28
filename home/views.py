@@ -13,13 +13,12 @@ def home(request):
     return render(request, "Public/index.html")
 
 
-
 def about(request):
     return render(request, 'about.html')
 
 
 class plans(TemplateView):
-    template_name = 'plans.html'
+    template_name = 'Public/Portfolio.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
@@ -29,7 +28,7 @@ class plans(TemplateView):
 
 
 def content(request):
-    return render(request, 'contact.html')
+    return render(request, 'Public/contactUs.html')
 
 
 def blog(request):
@@ -53,7 +52,7 @@ def blog(request):
         "search": search,
         "massage": massage
     }
-    return render(request, 'weblogPage.html', context)
+    return render(request, 'Public/blogs.html', context)
 
 
 class is_featured(TemplateView):
