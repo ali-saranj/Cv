@@ -1,0 +1,53 @@
+<!-- base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Src/output.css' %}">
+    <link rel="icon" href="{% static 'Pic/Logo/CP.svg' %}" type="Image/svg">
+    <title>{% block title %}وبلاگ | کدپلاس{% endblock %}</title>
+</head>
+<body class="font-IRSans-Medium bg-zinc-100">
+<svg class="hidden">
+    <symbol
+            id="x-mark"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+    </symbol>
+</svg>
+
+<header class="hidden lg:flex right-0 left-0 top-3 mx-auto justify-around items-center w-[90%] h-24">
+    <div class="flex w-full justify-between items-center z-50">
+        <nav class="flex gap-x-48">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'Pic/Logo/logocodeplus.svg' %}" alt="logo" class="h-[49px] w-[230px]">
+            </a>
+
+            <ul class="flex font-IRSans-Bold gap-x-10 items-center">
+                <li class="text-BlueC-800"><a href="{% url 'home' %}">صفحه اصلی</a></li>
+                <li><a href="{% url 'plans' %}">نمونه کار</a></li>
+                <li><a href="{% url 'blogs' %}">مقالات</a></li>
+                <li><a href="{% url 'contact' %}">تماس باما</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <button class="bg-BlueC-800 text-gray-900 w-36 h-9 font-IRSans-Medium text-sm rounded-xl">
+            <a href="{% url 'contact' %}">مشاوره رایگان</a>
+        </button>
+    </div>
+</header>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+</body>
+</html>
