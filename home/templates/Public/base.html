@@ -44,6 +44,46 @@
     </div>
 </header>
 
+
+<!-- Mobile Menu -->
+<div class="flex lg:hidden justify-between items-center bg-white p-3 my-3">
+    <!-- menu -->
+    <div class="nav-icon cursor-pointer">
+        <img src="{% static '/Pic/menu.png' %}" alt="">
+    </div>
+
+    <!-- NavBar -->
+    <div class="menuNav flex flex-col fixed w-64 -right-64 top-0 bottom-0 px-6 transition-all bg-white z-20 overflow-y-auto">
+        <!-- close -->
+        <div class="flex justify-end py-4">
+            <svg class="close-nav w-6 h-6 cursor-pointer">
+                <use href="#x-mark"></use>
+            </svg>
+        </div>
+
+        <!-- nav -->
+        <ul class="flex flex-col gap-y-3">
+            <li class="text-BlueC-800"><a href="{% url 'home' %}">صفحه اصلی</a></li>
+            <li><a href="{% url 'plans' %}">نمونه کار</a></li>
+            <li><a href="{% url 'blogs' %}">مقالات</a></li>
+            <li><a href="{% url 'contact' %}">تماس باما</a></li>
+        </ul>
+    </div>
+
+
+    <!-- mobile logo -->
+    <a href="{% static '/Public/index.html' %}">
+        <img src="{% static '/Pic/Logo/logocodeplus.svg' %}" alt="CodePlus" class="w-[115px] h-[24px]">
+    </a>
+
+    <!-- Call -->
+    <a href="#" class="cursor-pointer">
+        <img src="{% static '/Pic/calling.png' %}" alt="">
+    </a>
+
+{#    <img src="{% static '/Pic/header.png' %}" class="absolute left-0 top-0 -z-10 " alt="">#}
+</div>
+
 <main>
     {% block content %}
     {% endblock %}

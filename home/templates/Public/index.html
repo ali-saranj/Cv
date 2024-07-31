@@ -5,50 +5,14 @@
 
 
 {% block content %}
-
-
-    <!-- Mobile Menu -->
-    <div class="flex lg:hidden justify-between items-center bg-white p-3 my-3">
-        <!-- menu -->
-        <div class="nav-icon cursor-pointer">
-            <img src="{% static '/Pic/menu.png' %}" alt="">
-        </div>
-
-        <!-- NavBar -->
-        <div class="menuNav flex flex-col fixed w-64 -right-64 top-0 bottom-0 px-6 transition-all bg-white z-20 overflow-y-auto">
-            <!-- close -->
-            <div class="flex justify-end py-4">
-                <svg class="close-nav w-6 h-6 cursor-pointer">
-                    <use href="#x-mark"></use>
-                </svg>
-            </div>
-
-            <!-- nav -->
-            <ul class="flex flex-col gap-y-3">
-                <li class="text-BlueC-800"><a href="{% static '/Public/index.html' %}">صفحه اصلی</a></li>
-                <li><a href="{% static '/Public/Portfolio.html' %}">نمونه کار</a></li>
-                <li><a href="{% static '/Public/blogs.html' %}">مقالات</a></li>
-                <li><a href="{% static '/Public/contactUs.html' %}">تماس باما</a></li>
-            </ul>
-        </div>
-
-
-        <!-- mobile logo -->
-        <a href="{% static '/Public/index.html' %}">
-            <img src="{% static '/Pic/Logo/logocodeplus.svg' %}" alt="CodePlus" class="w-[115px] h-[24px]">
-        </a>
-
-        <!-- Call -->
-        <a href="#" class="cursor-pointer">
-            <img src="{% static '/Pic/calling.png' %}" alt="">
-        </a>
-
-        <img src="{% static '/Pic/header.png' %}" class="absolute left-0 top-0 -z-10 " alt="">
-    </div>
-
+    
+   
+    <img src="{% static '/Pic/header.png' %}" class="absolute left-0 top-0 -z-10 md:mb-0" alt="">
+{#    <img src="{% static '/Pic/header.png' %}" class="left-0 top-0 -z-10 " alt="">#}
+    
     <main>
         <!-- Header Home -->
-        <section class="container relative mt-[480px] md:mt-96 lg:mt-0">
+        <section class="container mt-[320px] md:mt-96 lg:mt-0 ">
             <div class="overflow-y-hidden md:min-h-screen lg:w-[50%] flex justify-end items-center">
                 <div class="flex flex-col gap-y-8">
                     <div class="font-Rokh-Med text-2xl md:text-3xl">پروژه خودتو با خیال راحت </br>به <span
@@ -73,18 +37,69 @@
         </section>
 
         <!-- Services -->
-        <section class="mt-16 md:mt-1 lg:mt-0">
-            <div class="container flex flex-col justify-center items-center">
+        <section class="mt-16 md:mt-1 lg:mt-0 ">
                 <!-- title -->
-                <div class="">
-                    <h3 class="font-Rokh-Bold text-2xl md:text-3xl mb-4">خدمات <span class="font-Rokh-Med">ما</span>
-                    </h3>
-                    <span class="font-IRSans-Light text-xs md:text-base">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</span>
-                </div>
+            <div class="container">
+                <h3 class="font-Rokh-Bold text-2xl md:text-3xl mb-4">خدمات <span class="font-Rokh-Med">ما</span></h3>
+                <span class="font-IRSans-Light text-xs md:text-base">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</span>
+            </div>
+            <div class="container flex flex-col justify-center items-center">
+            
                 <!-- product -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-9 gap-3 md:gap-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-9 gap-5 md:gap-10">
 
-                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                    <div class="w-[280px] md:h-[410px] h-[405px] bg-white rounded-md">
+                        <!-- head -->
+                        <div class="flex gap-2 items-center justify-center my-4">
+                            <img src="{% static 'Pic/11.png' %}" class="md:w-14 w-10 h-10 md:h-14" alt="">
+                            <h4 class="md:text-sm text-xs">طراحی سایت آماده پایه</h4>
+                        </div>
+                        <hr class="mx-7">
+                        <!-- main -->
+                        <ul class="flex flex-col gap-1 my-6 md:text-sm text-xs font-IRSans-Light text-grayPro-800">
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="{% static 'Pic/close.png' %}" class="w-3 h-3" alt="">
+                                <a href="#">سبد خرید</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
+                                <a href="#">کد نویسی اختصاصی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
+                                <a href="#">سیستم مدیریت محتوای وب وان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
+                                <a href="#">امکان سفارشی سازی و ارتقا</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
+                                <a href="#">مدیریت آسان محتوا بدون دانش فنی</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
+                                <a href="#">مناسب برای تمام مشاغل</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
+                                <a href="#">هاست رایگان</a>
+                            </li>
+                            <li class="flex justify-start items-center gap-1 mx-7">
+                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
+                                <a href="#">صفحات،محصولات وایمیل نامحدود</a>
+                            </li>
+                        </ul>
+
+                        <!-- end -->
+                        <div class="flex flex-col justify-center items-center">
+                            <span class="text-greenPrice-800 font-IRSans-Bold md:text-base text-sm">۲٬۹۸۰٬۰۰۰ تومان</span>
+                            <a href="#" class="bg-BlueC-800 rounded-xl px-6 md:px-8 py-1 md:py-2 my-3 text-xs">ثبت
+                                سفارش</a>
+                        </div>
+                    </div>
+
+                    <div class="w-[280px] md:h-[410px] h-[405px] bg-white rounded-md">
                         <!-- head -->
                         <div class="flex gap-2 items-center justify-center my-4">
                             <img src="{% static 'Pic/11.png' %}" class="md:w-14 w-10 h-10 md:h-14" alt="">
@@ -135,7 +150,7 @@
                         </div>
                     </div>
 
-                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                    <div class="w-[280px] md:h-[410px] h-[405px] bg-white rounded-md">
                         <!-- head -->
                         <div class="flex gap-2 items-center justify-center my-4">
                             <img src="{% static 'Pic/11.png' %}" class="md:w-14 w-10 h-10 md:h-14" alt="">
@@ -186,7 +201,7 @@
                         </div>
                     </div>
 
-                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                    <div class="w-[280px] md:h-[410px] h-[405px] bg-white rounded-md">
                         <!-- head -->
                         <div class="flex gap-2 items-center justify-center my-4">
                             <img src="{% static 'Pic/11.png' %}" class="md:w-14 w-10 h-10 md:h-14" alt="">
@@ -237,7 +252,7 @@
                         </div>
                     </div>
 
-                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                    <div class="w-[280px] md:h-[410px] h-[405px] bg-white rounded-md">
                         <!-- head -->
                         <div class="flex gap-2 items-center justify-center my-4">
                             <img src="{% static 'Pic/11.png' %}" class="md:w-14 w-10 h-10 md:h-14" alt="">
@@ -288,7 +303,7 @@
                         </div>
                     </div>
 
-                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
+                    <div class="w-[280px] md:h-[410px] h-[405px] bg-white rounded-md">
                         <!-- head -->
                         <div class="flex gap-2 items-center justify-center my-4">
                             <img src="{% static 'Pic/11.png' %}" class="md:w-14 w-10 h-10 md:h-14" alt="">
@@ -338,59 +353,7 @@
                                 سفارش</a>
                         </div>
                     </div>
-
-                    <div class="md:w-[280px] h-[410px] w-[204px] bg-white rounded-md">
-                        <!-- head -->
-                        <div class="flex gap-2 items-center justify-center my-4">
-                            <img src="{% static 'Pic/11.png' %}" class="md:w-14 w-10 h-10 md:h-14" alt="">
-                            <h4 class="md:text-sm text-xs">طراحی سایت آماده پایه</h4>
-                        </div>
-                        <hr class="mx-7">
-                        <!-- main -->
-                        <ul class="flex flex-col gap-1 my-6  md:text-sm text-xs font-IRSans-Light text-grayPro-800">
-                            <li class="flex justify-start items-center gap-1 mx-7">
-                                <img src="{% static 'Pic/close.png' %}" class="w-3 h-3" alt="">
-                                <a href="#">سبد خرید</a>
-                            </li>
-                            <li class="flex justify-start items-center gap-1 mx-7">
-                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
-                                <a href="#">کد نویسی اختصاصی</a>
-                            </li>
-                            <li class="flex justify-start items-center gap-1 mx-7">
-                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
-                                <a href="#">سیستم مدیریت محتوای وب وان</a>
-                            </li>
-                            <li class="flex justify-start items-center gap-1 mx-7">
-                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
-                                <a href="#">امکان سفارشی سازی و ارتقا</a>
-                            </li>
-                            <li class="flex justify-start items-center gap-1 mx-7">
-                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
-                                <a href="#">مدیریت آسان محتوا بدون دانش فنی</a>
-                            </li>
-                            <li class="flex justify-start items-center gap-1 mx-7">
-                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
-                                <a href="#">مناسب برای تمام مشاغل</a>
-                            </li>
-                            <li class="flex justify-start items-center gap-1 mx-7">
-                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
-                                <a href="#">هاست رایگان</a>
-                            </li>
-                            <li class="flex justify-start items-center gap-1 mx-7">
-                                <img src="{% static 'Pic/tik.png' %}" class="w-3 h-3" alt="">
-                                <a href="#">صفحات،محصولات وایمیل نامحدود</a>
-                            </li>
-                        </ul>
-
-                        <!-- end -->
-                        <div class="flex flex-col justify-center items-center">
-                            <span class="text-greenPrice-800 font-IRSans-Bold md:text-base text-sm">۲٬۹۸۰٬۰۰۰ تومان</span>
-                            <a href="#" class="bg-BlueC-800 rounded-xl px-6 md:px-8 py-1 md:py-2 my-3 text-xs">ثبت
-                                سفارش</a>
-                        </div>
-                    </div>
-
-
+                    
                 </div>
             </div>
         </section>

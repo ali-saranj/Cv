@@ -3,48 +3,8 @@
 
 {% load static %}
 
-
 {% block content %}
-
-
-    <!-- Mobile Menu -->
-    <div class="flex lg:hidden justify-between items-center bg-white p-3 my-3">
-        <!-- menu -->
-        <div class="nav-icon cursor-pointer">
-            <img src="{% static 'Pic/menu.png' %}" alt="">
-        </div>
-
-        <!-- NavBar -->
-        <div class="menuNav flex flex-col fixed w-64 -right-64 top-0 bottom-0 px-6 transition-all bg-white z-20 overflow-y-auto">
-            <!-- close -->
-            <div class="flex justify-end py-4">
-                <svg class="close-nav w-6 h-6 cursor-pointer">
-                    <use href="#x-mark"></use>
-                </svg>
-            </div>
-
-            <!-- nav -->
-            <ul class="flex flex-col gap-y-3">
-                <li class="text-BlueC-800"><a href="../Public/index.html">صفحه اصلی</a></li>
-                <li><a href="../Public/Portfolio.html">نمونه کار</a></li>
-                <li><a href="../Public/blogs.html">مقالات</a></li>
-                <li><a href="../Public/contactUs.html">تماس باما</a></li>
-            </ul>
-        </div>
-
-
-        <!-- mobile logo -->
-        <a href="../Public/index.html">
-            <img src="{% static 'Pic/Logo/logocodeplus.svg' %}" alt="CodePlus" class="w-[115px] h-[24px]">
-        </a>
-
-        <!-- Call -->
-        <a href="#" class="cursor-pointer">
-            <img src="{% static '/Pic/calling.png' %}" alt="">
-        </a>
-    </div>
-
-
+    
     <main>
         <div class="container mt-10 gap-x-1">
             <div class="flex justify-between">

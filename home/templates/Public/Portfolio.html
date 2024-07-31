@@ -1,48 +1,8 @@
-<!-- index.html -->
 {% extends 'Public/base.html' %}
 
 {% load static %}
 
-
 {% block content %}
-
-    <!-- Mobile Menu -->
-    <div class="flex lg:hidden justify-between items-center bg-white p-3 my-3">
-        <!-- menu -->
-        <div class="nav-icon cursor-pointer">
-            <img src="{% static '/Pic/menu.png' %}" alt="">
-        </div>
-
-        <!-- NavBar -->
-        <div class="menuNav flex flex-col fixed w-64 -right-64 top-0 bottom-0 px-6 transition-all bg-white z-20 overflow-y-auto">
-            <!-- close -->
-            <div class="flex justify-end py-4">
-                <svg class="close-nav w-6 h-6 cursor-pointer">
-                    <use href="#x-mark"></use>
-                </svg>
-            </div>
-
-            <!-- nav -->
-            <ul class="flex flex-col gap-y-3">
-                <li class="text-BlueC-800"><a href="{% static '/Public/index.html' %}">صفحه اصلی</a></li>
-                <li><a href="{% static '/Public/Portfolio.html' %}">نمونه کار</a></li>
-                <li><a href="{% static '/Public/blogs.html' %}">مقالات</a></li>
-                <li><a href="{% static '/Public/contactUs.html' %}">تماس باما</a></li>
-            </ul>
-        </div>
-
-
-        <!-- mobile logo -->
-        <a href="{% static '/Public/index.html' %}">
-            <img src="{% static '/Pic/Logo/logocodeplus.svg' %}" alt="CodePlus" class="w-[115px] h-[24px]">
-        </a>
-
-        <!-- Call -->
-        <a href="#" class="cursor-pointer">
-            <img src="{% static '/Pic/calling.png' %}" alt="">
-        </a>
-    </div>
-
 
     <main>
         <div class="container mt-10">
@@ -62,20 +22,18 @@
             <div class="flex justify-center md:items-start items-center md:flex-row flex-col gap-6 mt-7">
 
                 <div class="Content animate-search">
-                    <!-- right -->
                     <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-5 lg:w-[1240px] md:w-[600px] w-[360px]">
-                        <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                            <img src="{% static '/Pic/Pro.png' %}" alt=""
-                                 class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                        <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-start my-4">
+                            <div class="rounded-lg lg:w-[190px] w-[200px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                                <img src="{% static '/Pic/Pro.png' %}" alt="" class="">
+                            </div>
                             <div>
-                                <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                <div class="flex flex-col justify-between lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -92,33 +50,9 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
-                                </div>
-                                <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                    <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
-                                        اطلاعات بیشتر
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                            <img src="{% static '/Pic/Pro.png' %}" alt=""
-                                 class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                            <div>
-                                <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                    <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                    <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -136,11 +70,29 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                </div>
+                                <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                    <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
+                                        اطلاعات بیشتر
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                            <img src="{% static '/Pic/Pro.png' %}" alt=""
+                                 class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                            <div>
+                                <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                    <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                    <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -157,11 +109,9 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -174,7 +124,7 @@
                     </div>
                 </div>
 
-                <div class="Content animate-search">
+                <div class="Content hidden animate-search">
                     <!-- right -->
                     <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-5 lg:w-[1240px] md:w-[600px] w-[360px]">
                         <div class="flex lg:flex-row flex-col gap-5 bg-blue-500 lg:p-3 p-2 rounded-lg items-center my-4">
@@ -184,11 +134,9 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -205,33 +153,9 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
-                                </div>
-                                <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                    <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
-                                        اطلاعات بیشتر
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                            <img src="{% static '/Pic/Pro.png' %}" alt=""
-                                 class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                            <div>
-                                <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                    <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                    <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -249,11 +173,29 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                </div>
+                                <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                    <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
+                                        اطلاعات بیشتر
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                            <img src="{% static '/Pic/Pro.png' %}" alt=""
+                                 class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                            <div>
+                                <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                    <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                    <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -270,11 +212,9 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -287,7 +227,7 @@
                     </div>
                 </div>
 
-                <div class="Content animate-search">
+                <div class="Content hidden animate-search">
                     <!-- right -->
                     <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-5 lg:w-[1240px] md:w-[600px] w-[360px]">
                         <div class="flex lg:flex-row flex-col gap-5 bg-red-400 lg:p-3 p-2 rounded-lg items-center my-4">
@@ -297,11 +237,9 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -318,33 +256,9 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
-                                </div>
-                                <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
-                                    <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
-                                        اطلاعات بیشتر
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
-                            <img src="{% static '/Pic/Pro.png' %}" alt=""
-                                 class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
-                            <div>
-                                <div class="flex flex-col justify-center lg:items-start items-center gap-5">
-                                    <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
-                                    <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -362,11 +276,29 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                </div>
+                                <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
+                                    <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
+                                        اطلاعات بیشتر
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flex lg:flex-row flex-col gap-5 bg-white lg:p-3 p-2 rounded-lg items-center my-4">
+                            <img src="{% static '/Pic/Pro.png' %}" alt=""
+                                 class="rounded-lg lg:w-[290px] w-[223px] lg:h-[185px] h-[143px] lg:my-0 my-4">
+                            <div>
+                                <div class="flex flex-col justify-center lg:items-start items-center gap-5">
+                                    <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
+                                    <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -383,11 +315,9 @@
                                 <div class="flex flex-col justify-center lg:items-start items-center gap-5">
                                     <h5 class="font-IRSans-Bold lg:text-2xl text-xl">پرتقالی</h5>
                                     <p class="font-IRSans-Light lg:text-base text-sm">لورم ایپسوم متن ساختگی با تولید
-                                        سادگی
-                                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه
-                                        و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                 </div>
                                 <div class="md:my-4 flex md:items-end items-center md:justify-end justify-center my-5">
                                     <button class="lg:text-base text-sm left-0 text-gray-800 bg-BlueC-300 lg:rounded-3xl rounded-xl lg:py-3 py-2 px-4">
@@ -425,17 +355,14 @@
         <div class="bg-BlueC-100  h-auto w-full flex lg:flex-row flex-col lg:justify-around lg:items-start justify-center items-center rounded-3xl -mb-10 z-10">
             <div class="mt-16 flex flex-col lg:items-start items-center">
                 <!-- Logo -->
-                <img src="{% static 'Pic/Logo/logocodeplus.svg' %}" alt="logo"
-                     class="lg:h-[49px] h-10 w-40 lg:w-[230px]">
+                <img src="{% static '/Pic/Logo/logocodeplus.svg ' %}" alt="logo"
+                     class="lg:h-[49px] h-10 w-40 lg:w-[230px]"/>
                 <p class="font-IRSans-Light text-xs w-96 text-justify leading-6 mt-6">لورم ایپسوم متن ساختگی با تولید
-                    سادگی
-                    نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                    سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                    کاربردی می باشد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                    گرافیک
-                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
-                    مورد
-                    نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                    سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                    ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                    ابزارهای کاربردی می باشد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                    طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
             </div>
             <!-- left Side -->
             <div class="lg:mt-28 my-10 grid sm:grid-cols-3 grid-cols-2 lg:gap-28 gap-x-16 gap-y-7">
